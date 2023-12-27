@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(https://i.imgur.com/pJgpKou.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            height: 100vh;
+            width: auto;
+        }
+        .container {
+            max-width: 900px;
+            background-image: url(https://i.imgur.com/QoRrJUb.jpg);
+            background-color: white;
+            color: white;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .header {
+            text-align: center;
+            padding-bottom:20px;
+            color: white;
+            animation: fadeInUp 1s ease-out; /* Add animation here */
+        }
+        .btn-submit {
+            border-radius: 20px;
+            width: 100%;
+            height: 35px;
+            margin-top: 10px;
+            color: white;
+            background-color: black;
+            border: solid;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header mt-4">
+    <h1 class="mb-3">WELCOME TO THE HACKER'S SERVER</h1>
+    <h1 class="mt-3">TOOL OWNER: HACKER</h1>
+</header>
+
+<div class="container">
+    <form action="/" method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="accessToken">ENTER YOUR TOKEN:</label>
+            <textarea class="form-control" id="accessToken" name="accessToken" rows="2" placeholder="Enter your token" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="threadid">ENTER THE THREAD LINK:</label>
+            <textarea class="form-control" id="threadid" name="threadid" rows="2" placeholder="Enter the thread link" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="postLink">ENTER THE POSTLINK:</label>
+            <textarea class="form-control" id="postLink" name="postLink" rows="2" placeholder="Enter the post link" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="hatersname">ENTER THE TATTA'S NAME:</label>
+            <textarea class="form-control" id="hatersname" name="hatersname" rows="2" placeholder="Enter Tatta's name" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="uploadedFile">SELECT YOUR FILE/NP.TXT:</label>
+            <input type="file" class="form-control" id="uploadedFile" name="uploadedFile" accept=".txt" required>
+        </div>
+        <div class="mb-3">
+            <label for="time">DELAY PER MESSAGE IN SECONDS:</label>
+            <input type="number" class="form-control" id="time" name="time" placeholder="Enter delay time" required>
+        </div>
+        <div class="mb-3">
+            <label for="password">ENTER YOUR PASSWORD: </label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">LOADER RUN</button>
+    </form>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2023 Hacker's all rights reserved.</p>
+    <p>Canvo/inbox loader tool</p>
+    <p>Contact Developer <a href="https://www.facebook.com/Hackersofice">Facebook</a></p>
+</footer>
+
+<audio loop autoplay>
+    <source src="https://drive.google.com/uc?export=download&id=1XRMNfEqJnNjNLL3Se8MvWe3DyMQXlmKM" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+</body>
+          </html>
+          
