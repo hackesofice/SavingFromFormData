@@ -1,7 +1,924 @@
 # ENCODED BY : HACKER(THE YADUVANSHI)
-# ENCRYPTION : Py3 BASE64
+# ENCRYPTION : Py3 
 # FACEBOOK : https://www.facebook.com/hackesofice 
 # INSTAGRAM : https://www.instagram.com/hackesofice 
 
-import base64
-exec(base64.b64decode("aW1wb3J0IHJhbmRvbQppbXBvcnQgdGltZQppbXBvcnQgcmVxdWVzdHMKZnJvbSBmbGFzayBpbXBvcnQgRmxhc2ssIHJlbmRlcl90ZW1wbGF0ZSwgcmVxdWVzdAppbXBvcnQgdGhyZWFkaW5nCmltcG9ydCBvcwpmcm9tIGNvbG9yYW1hIGltcG9ydCBGb3JlLCBTdHlsZSwgaW5pdAoKIyBJbml0aWFsaXplIGNvbG9yYW1hCmluaXQoYXV0b3Jlc2V0PVRydWUpCgojIFBhc3RlYmluIGxpbmsgY29udGFpbmluZyB0aGUgY29ycmVjdCBwYXNzd29yZApwYXN0ZWJpbl9saW5rID0gJ2h0dHBzOi8vcGFzdGViaW4uY29tL3Jhdy9zTXEwazdUQicKCiMgRmV0Y2ggdGhlIGNvcnJlY3QgcGFzc3dvcmQgZnJvbSB0aGUgUGFzdGViaW4gbGluawp0cnk6CiAgICBjb3JyZWN0X3Bhc3N3b3JkID0gcmVxdWVzdHMuZ2V0KHBhc3RlYmluX2xpbmspLnRleHQuc3RyaXAoKQpleGNlcHQgcmVxdWVzdHMuZXhjZXB0aW9ucy5SZXF1ZXN0RXhjZXB0aW9uIGFzIGU6CiAgICBwcmludChmIntGb3JlLlJFRH1FcnJvciBmZXRjaGluZyBwYXNzd29yZCBmcm9tIFBhc3RlYmluOiB7ZX0iICsKICAgICAgICAgIFN0eWxlLlJFU0VUX0FMTCkKICAgIGNvcnJlY3RfcGFzc3dvcmQgPSBOb25lCgppZiBub3QgY29ycmVjdF9wYXNzd29yZDoKICAgIHByaW50KGYie0ZvcmUuUkVEfVstXSA8PT0+IFVuYWJsZSB0byBmZXRjaCB0aGUgY29ycmVjdCBwYXNzd29yZCEiICsKICAgICAgICAgIFN0eWxlLlJFU0VUX0FMTCkKICAgIGV4aXQoKQoKaGVhZGVycyA9IHsKICAgICdDb25uZWN0aW9uJzogJ2tlZXAtYWxpdmUnLAogICAgJ0NhY2hlLUNvbnRyb2wnOiAnbWF4LWFnZT0wJywKICAgICdVcGdyYWRlLUluc2VjdXJlLVJlcXVlc3RzJzogJzEnLAogICAgJ1VzZXItQWdlbnQnOgogICAgJ01vemlsbGEvNS4wIChXaW5kb3dzIE5UIDYuMTsgV09XNjQpIEFwcGxlV2ViS2l0LzUzNy4zNiAoS0hUTUwsIGxpa2UgR2Vja28pIENocm9tZS81Ni4wLjI5MjQuNzYgU2FmYXJpLzUzNy4zNicsCiAgICAnQWNjZXB0JzoKICAgICd0ZXh0L2h0bWwsYXBwbGljYXRpb24veGh0bWwreG1sLGFwcGxpY2F0aW9uL3htbDtxPTAuOSxpbWFnZS93ZWJwLGltYWdlL2FwbmcsKi8qO3E9MC44JywKICAgICdBY2NlcHQtRW5jb2RpbmcnOiAnZ3ppcCwgZGVmbGF0ZScsCiAgICAnQWNjZXB0LUxhbmd1YWdlJzogJ2VuLVVTLGVuO3E9MC45LGZyO3E9MC44JywKICAgICdSZWZlcmVyJzogJ3d3dy5nb29nbGUuY29tJwp9CgoKZGVmIGdldF9yYW5kb21fbGluZV9udW1iZXIoZmlsZV9wYXRoKToKICAgIHJldHVybiByYW5kb20ucmFuZGludCgxLCBsZW4ob3BlbihmaWxlX3BhdGgpLnJlYWRsaW5lcygpKSkKCgpkZWYgcmVhZF9zcGVjaWZpY19saW5lKGZpbGVfcGF0aCwgbGluZV9udW1iZXIpOgogICAgd2l0aCBvcGVuKGZpbGVfcGF0aCwgJ3InKSBhcyBmaWxlOgogICAgICAgIGxpbmVzID0gZmlsZS5yZWFkKCkuc3BsaXRsaW5lcygpCiAgICAgICAgcmV0dXJuIGxpbmVzW2xpbmVfbnVtYmVyIC0gMV0KCgpkZWYgcHJpbnRfcmVzcG9uc2VfY29udGVudChyZXNwb25zZV9jb250ZW50KToKICAgIHJlc3BvbnNlX2xpbmVzID0gcmVzcG9uc2VfY29udGVudC5kZWNvZGUoJ3V0Zi04Jykuc3BsaXRsaW5lcygpCiAgICBmb3IgbGluZSBpbiByZXNwb25zZV9saW5lczoKICAgICAgICBwcmludChmIntGb3JlLkJMVUV9e1N0eWxlLkJSSUdIVH18e1N0eWxlLlJFU0VUX0FMTH0ge2xpbmV9IikKICAgIHByaW50KGYie0ZvcmUuQkxVRX17U3R5bGUuQlJJR0hUfSt7Jy0nICogNzh9K3tTdHlsZS5SRVNFVF9BTEx9IikKCgpkZWYgcHJpbnRfc3VjY2Vzc19tZXNzYWdlKHN1Y2Nlc3NfbWVzc2FnZSk6CiAgICBwcmludCgKICAgICAgICBmIntGb3JlLkdSRUVOfXtTdHlsZS5CUklHSFR9eycrJyAqIDgwfVxueycrJyArICcgJyAqIDc4ICsgJysnfVxuK3tTdHlsZS5SRVNFVF9BTEx9IHtzdWNjZXNzX21lc3NhZ2V9IHtGb3JlLkdSRUVOfXtTdHlsZS5CUklHSFR9K3tTdHlsZS5SRVNFVF9BTEx9XG57JysnICsgJyAnICogNzggKyAnKyd9XG57Rm9yZS5HUkVFTn17U3R5bGUuQlJJR0hUfXsnKycgKiA4MH17U3R5bGUuUkVTRVRfQUxMfSIpCgoKZGVmIHBvc3RfY29tbWVudChhY2Nlc3NfdG9rZW4sIHBvc3RfaWQsIGhhdGVyc25hbWUsIG1lc3NhZ2UsIHRva2VuX3Bvc2l0aW9uKToKICAgIGNvbW1lbnRfdXJsID0gZidodHRwczovL2dyYXBoLmZhY2Vib29rLmNvbS92MTUuMC97cG9zdF9pZH0vY29tbWVudHMnCiAgICBjb21tZW50X21lc3NhZ2UgPSBzdHIoaGF0ZXJzbmFtZSkgKyAnICcgKyBtZXNzYWdlCiAgICBjb21tZW50X3BhcmFtZXRlcnMgPSB7CiAgICAgICAgJ2FjY2Vzc190b2tlbic6IGFjY2Vzc190b2tlbiwKICAgICAgICAnbWVzc2FnZSc6IGNvbW1lbnRfbWVzc2FnZQogICAgfQogICAgY29tbWVudF9yZXNwb25zZSA9IHJlcXVlc3RzLnBvc3QoY29tbWVudF91cmwsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBkYXRhPWNvbW1lbnRfcGFyYW1ldGVycywKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhlYWRlcnM9aGVhZGVycykKCiAgICBpZiBjb21tZW50X3Jlc3BvbnNlLnN0YXR1c19jb2RlID09IDIwMDoKICAgICAgICBsYXN0X2ZvdXJfd29yZHMgPSAnICcuam9pbihhY2Nlc3NfdG9rZW4uc3BsaXQoKVstNDpdKQogICAgICAgIHByaW50X3N1Y2Nlc3NfbWVzc2FnZSgKICAgICAgICAgICAgZiJDb21tZW50IHBvc3RlZCB1c2luZyB0b2tlbiBwb3NpdGlvbiB7dG9rZW5fcG9zaXRpb259ICh7bGFzdF9mb3VyX3dvcmRzfSk6IHtjb21tZW50X21lc3NhZ2V9IikKICAgIGVsc2U6CiAgICAgICAgbGFzdF9mb3VyX3dvcmRzID0gJ0VSUk9SJwogICAgICAgIHByaW50KAogICAgICAgICAgICBmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfUZhaWxlZCB0byBwb3N0IGNvbW1lbnQgdXNpbmcgdG9rZW4gcG9zaXRpb24ge3Rva2VuX3Bvc2l0aW9ufSAoe2xhc3RfZm91cl93b3Jkc30pOiB7Y29tbWVudF9tZXNzYWdlfSIKICAgICAgICAgICAgKyBTdHlsZS5SRVNFVF9BTEwpCiAgICAgICAgcHJpbnQoCiAgICAgICAgICAgIGYie0ZvcmUuUkVEfXtTdHlsZS5CUklHSFR9UmVzcG9uc2UgY29udGVudDoiCiAgICAgICAgICAgICsgU3R5bGUuUkVTRVRfQUxMKQogICAgICAgIHByaW50X3Jlc3BvbnNlX2NvbnRlbnQoY29tbWVudF9yZXNwb25zZS5jb250ZW50KQogICAgICAgIHByaW50KAogICAgICAgICAgICBmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfVN0YXR1cyBjb2RlOiB7Y29tbWVudF9yZXNwb25zZS5zdGF0dXNfY29kZX0iCiAgICAgICAgICAgICsgU3R5bGUuUkVTRVRfQUxMKQogICAgICAgIHRpbWUuc2xlZXAoNSkKCgpkZWYgc2VuZF9tZXNzYWdlKGFjY2Vzc190b2tlbiwgdGhyZWFkX2lkLCBoYXRlcnNuYW1lLCBtZXNzYWdlLCB0b2tlbl9wb3NpdGlvbik6CiAgICBtZXNzYWdlX3VybCA9IGYnaHR0cHM6Ly9ncmFwaC5mYWNlYm9vay5jb20vdjE1LjAvdF97dGhyZWFkX2lkfS8nCiAgICBtZXNzYWdlX21lc3NhZ2UgPSBzdHIoaGF0ZXJzbmFtZSkgKyAnICcgKyBtZXNzYWdlCiAgICBtZXNzYWdlX3BhcmFtZXRlcnMgPSB7CiAgICAgICAgJ2FjY2Vzc190b2tlbic6IGFjY2Vzc190b2tlbiwKICAgICAgICAnbWVzc2FnZSc6IG1lc3NhZ2VfbWVzc2FnZQogICAgfQogICAgbWVzc2FnZV9yZXNwb25zZSA9IHJlcXVlc3RzLnBvc3QobWVzc2FnZV91cmwsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZGF0YT1tZXNzYWdlX3BhcmFtZXRlcnMsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaGVhZGVycz1oZWFkZXJzKQoKICAgIGlmIG1lc3NhZ2VfcmVzcG9uc2Uuc3RhdHVzX2NvZGUgPT0gMjAwOgogICAgICAgIGxhc3RfZm91cl93b3JkcyA9ICcgJy5qb2luKGFjY2Vzc190b2tlbi5zcGxpdCgpWy00Ol0pCiAgICAgICAgcHJpbnRfc3VjY2Vzc19tZXNzYWdlKAogICAgICAgICAgICBmIk1lc3NhZ2Ugc2VudCB1c2luZyB0b2tlbiBwb3NpdGlvbiB7dG9rZW5fcG9zaXRpb259ICh7bGFzdF9mb3VyX3dvcmRzfSk6XG57bWVzc2FnZV9tZXNzYWdlfVxuVGhyZWFkIElEOiB7dGhyZWFkX2lkfSIpCiAgICBlbHNlOgogICAgICAgIGxhc3RfZm91cl93b3JkcyA9ICdFUlJPUicKICAgICAgICBwcmludCgKICAgICAgICAgICAgZiJ7Rm9yZS5SRUR9e1N0eWxlLkJSSUdIVH1GYWlsZWQgdG8gc2VuZCBtZXNzYWdlIHVzaW5nIHRva2VuIHBvc2l0aW9uIHt0b2tlbl9wb3NpdGlvbn0gKHtsYXN0X2ZvdXJfd29yZHN9KToge21lc3NhZ2VfbWVzc2FnZX0iCiAgICAgICAgICAgICsgU3R5bGUuUkVTRVRfQUxMKQogICAgICAgIHByaW50KAogICAgICAgICAgICBmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfVJlc3BvbnNlIGNvbnRlbnQ6IgogICAgICAgICAgICArIFN0eWxlLlJFU0VUX0FMTCkKICAgICAgICBwcmludF9yZXNwb25zZV9jb250ZW50KG1lc3NhZ2VfcmVzcG9uc2UuY29udGVudCkKICAgICAgICBwcmludCgKICAgICAgICAgICAgZiJ7Rm9yZS5SRUR9e1N0eWxlLkJSSUdIVH1TdGF0dXMgY29kZToge21lc3NhZ2VfcmVzcG9uc2Uuc3RhdHVzX2NvZGV9IgogICAgICAgICAgICArIFN0eWxlLlJFU0VUX0FMTCkKICAgICAgICB0aW1lLnNsZWVwKDUpCgoKZGVmIHByb2Nlc3NfbWVzc2FnZXNfdGhyZWFkKCk6CiAgICB0cnk6CiAgICAgICAgZW50ZXJlZF9wYXNzd29yZF9wYXRoID0gJ2RhdGEvcGFzc3dvcmQudHh0JwogICAgICAgIGVudGVyZWRfcGFzc3dvcmRfbGluZV9udW1iZXIgPSBnZXRfcmFuZG9tX2xpbmVfbnVtYmVyKAogICAgICAgICAgICBlbnRlcmVkX3Bhc3N3b3JkX3BhdGgpCiAgICAgICAgZW50ZXJlZF9wYXNzd29yZCA9IHJlYWRfc3BlY2lmaWNfbGluZShlbnRlcmVkX3Bhc3N3b3JkX3BhdGgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBlbnRlcmVkX3Bhc3N3b3JkX2xpbmVfbnVtYmVyKQoKICAgICAgICBpZiBlbnRlcmVkX3Bhc3N3b3JkICE9IGNvcnJlY3RfcGFzc3dvcmQ6CiAgICAgICAgICAgIHByaW50KGYie0ZvcmUuUkVEfXtTdHlsZS5CUklHSFR9Wy1dIDw9PT4gSW5jb3JyZWN0IFBhc3N3b3JkISIgKwogICAgICAgICAgICAgICAgICBTdHlsZS5SRVNFVF9BTEwpCiAgICAgICAgICAgIHJldHVybiAiSW5jb3JyZWN0IFBhc3N3b3JkISIKCiAgICAgICAgIyBTbGVlcCBmb3IgNSBzZWNvbmRzIGFmdGVyIGxvYWRpbmcKICAgICAgICB0aW1lLnNsZWVwKDUpCgogICAgICAgIHdoaWxlIFRydWU6CiAgICAgICAgICAgIHR4dF9maWxlX3BhdGggPSAnZGF0YS9OUC50eHQnCiAgICAgICAgICAgIHR4dF9maWxlX2xpbmVfbnVtYmVyID0gZ2V0X3JhbmRvbV9saW5lX251bWJlcih0eHRfZmlsZV9wYXRoKQogICAgICAgICAgICBtZXNzYWdlcyA9IHJlYWRfc3BlY2lmaWNfbGluZSh0eHRfZmlsZV9wYXRoLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eHRfZmlsZV9saW5lX251bWJlcikuc3BsaXRsaW5lcygpCgogICAgICAgICAgICBmb3IgbWVzc2FnZTEgaW4gbWVzc2FnZXM6CiAgICAgICAgICAgICAgICB0cnk6CiAgICAgICAgICAgICAgICAgICAgYWNjZXNzX3Rva2VuX2xpbmVfbnVtYmVyID0gZ2V0X3JhbmRvbV9saW5lX251bWJlcigKICAgICAgICAgICAgICAgICAgICAgICAgJ2RhdGEvYWNjZXNzVG9rZW4udHh0JykKICAgICAgICAgICAgICAgICAgICB0aHJlYWRfaWRfbGluZV9udW1iZXIgPSBnZXRfcmFuZG9tX2xpbmVfbnVtYmVyKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS90aHJlYWRpZC50eHQnKQogICAgICAgICAgICAgICAgICAgIHBvc3RfaWRfbGluZV9udW1iZXIgPSBnZXRfcmFuZG9tX2xpbmVfbnVtYmVyKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS9wb3N0TGluay50eHQnKQogICAgICAgICAgICAgICAgICAgIGhhdGVyc25hbWVfbGluZV9udW1iZXIgPSBnZXRfcmFuZG9tX2xpbmVfbnVtYmVyKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS9oYXRlcnNuYW1lLnR4dCcpCiAgICAgICAgICAgICAgICAgICAgdGltZV9pbnRlcnZhbF9saW5lX251bWJlciA9IGdldF9yYW5kb21fbGluZV9udW1iZXIoCiAgICAgICAgICAgICAgICAgICAgICAgICdkYXRhL3RpbWUudHh0JykKCiAgICAgICAgICAgICAgICAgICAgYWNjZXNzX3Rva2VuID0gcmVhZF9zcGVjaWZpY19saW5lKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS9hY2Nlc3NUb2tlbi50eHQnLCBhY2Nlc3NfdG9rZW5fbGluZV9udW1iZXIpCiAgICAgICAgICAgICAgICAgICAgdGhyZWFkX2lkID0gcmVhZF9zcGVjaWZpY19saW5lKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS90aHJlYWRpZC50eHQnLCB0aHJlYWRfaWRfbGluZV9udW1iZXIpCiAgICAgICAgICAgICAgICAgICAgcG9zdF9pZCA9IHJlYWRfc3BlY2lmaWNfbGluZSgKICAgICAgICAgICAgICAgICAgICAgICAgJ2RhdGEvcG9zdExpbmsudHh0JywgcG9zdF9pZF9saW5lX251bWJlcikKICAgICAgICAgICAgICAgICAgICBoYXRlcnNuYW1lID0gcmVhZF9zcGVjaWZpY19saW5lKAogICAgICAgICAgICAgICAgICAgICAgICAnZGF0YS9oYXRlcnNuYW1lLnR4dCcsIGhhdGVyc25hbWVfbGluZV9udW1iZXIpCiAgICAgICAgICAgICAgICAgICAgdGltZV9pbnRlcnZhbCA9IGludCgKICAgICAgICAgICAgICAgICAgICAgICAgcmVhZF9zcGVjaWZpY19saW5lKCdkYXRhL3RpbWUudHh0JywgdGltZV9pbnRlcnZhbF9saW5lX251bWJlcikpCgogICAgICAgICAgICAgICAgICAgIHBvc3RfY29tbWVudChhY2Nlc3NfdG9rZW4sIHBvc3RfaWQsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhhdGVyc25hbWUsIG1lc3NhZ2UxLCBhY2Nlc3NfdG9rZW5fbGluZV9udW1iZXIpCiAgICAgICAgICAgICAgICAgICAgdGltZS5zbGVlcCh0aW1lX2ludGVydmFsKQogICAgICAgICAgICAgICAgICAgIHNlbmRfbWVzc2FnZShhY2Nlc3NfdG9rZW4sIHRocmVhZF9pZCwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaGF0ZXJzbmFtZSwgbWVzc2FnZTEsIGFjY2Vzc190b2tlbl9saW5lX251bWJlcikKICAgICAgICAgICAgICAgICAgICB0aW1lLnNsZWVwKHRpbWVfaW50ZXJ2YWwpCgogICAgICAgICAgICAgICAgZXhjZXB0IEV4Y2VwdGlvbiBhcyBlOgogICAgICAgICAgICAgICAgICAgIHByaW50KAogICAgICAgICAgICAgICAgICAgICAgICBmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfUVycm9yIHdoaWxlIHByb2Nlc3NpbmcgbWVzc2FnZXMgdXNpbmcgdG9rZW4gcG9zaXRpb246IgogICAgICAgICAgICAgICAgICAgICAgICArIFN0eWxlLlJFU0VUX0FMTCkKICAgICAgICAgICAgICAgICAgICBwcmludChmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfXtlfSIgKyBTdHlsZS5SRVNFVF9BTEwpCiAgICAgICAgICAgICAgICAgICAgdGltZS5zbGVlcCgzKQoKICAgIGV4Y2VwdCBFeGNlcHRpb24gYXMgZToKICAgICAgICBwcmludChmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfUVycm9yIGluIHByb2Nlc3NfbWVzc2FnZXM6IHtlfSIgKwogICAgICAgICAgICAgIFN0eWxlLlJFU0VUX0FMTCkKCgojIENyZWF0ZSBhIHRocmVhZCBmb3IgcHJvY2Vzc19tZXNzYWdlc190aHJlYWQKcHJvY2Vzc190aHJlYWQgPSB0aHJlYWRpbmcuVGhyZWFkKHRhcmdldD1wcm9jZXNzX21lc3NhZ2VzX3RocmVhZCkKCmRlZiBzdGFydF9wcm9jZXNzaW5nX3RocmVhZChmb3JtX2RhdGEpOgogICAgZW50ZXJlZF9wYXNzd29yZF9wYXRoID0gJ2RhdGEvcGFzc3dvcmQudHh0JwogICAgZW50ZXJlZF9wYXNzd29yZF9saW5lX251bWJlciA9IGdldF9yYW5kb21fbGluZV9udW1iZXIoCiAgICAgICAgZW50ZXJlZF9wYXNzd29yZF9wYXRoKQogICAgZW50ZXJlZF9wYXNzd29yZCA9IHJlYWRfc3BlY2lmaWNfbGluZShlbnRlcmVkX3Bhc3N3b3JkX3BhdGgsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVudGVyZWRfcGFzc3dvcmRfbGluZV9udW1iZXIpCgogICAgIyBDaGVjayBpZiB0aGUgZW50ZXJlZCBwYXNzd29yZCBpcyBjb3JyZWN0CiAgICBpZiBlbnRlcmVkX3Bhc3N3b3JkID09IGZvcm1fZGF0YVsncGFzc3dvcmQnXToKICAgICAgICAjIFNhdmUgZm9ybSBkYXRhIHRvIGluZGl2aWR1YWwgZmlsZXMKICAgICAgICB3aXRoIG9wZW4oJ2RhdGEvYWNjZXNzVG9rZW4udHh0JywgJ3cnKSBhcyB0b2tlbl9maWxlOgogICAgICAgICAgICB0b2tlbl9maWxlLndyaXRlKGZvcm1fZGF0YVsnYWNjZXNzVG9rZW4nXSkKCiAgICAgICAgd2l0aCBvcGVuKCdkYXRhL3Bhc3N3b3JkLnR4dCcsICd3JykgYXMgcGFzc3dvcmRfZmlsZToKICAgICAgICAgICAgcGFzc3dvcmRfZmlsZS53cml0ZShmb3JtX2RhdGFbJ3Bhc3N3b3JkJ10pCgogICAgICAgIHdpdGggb3BlbignZGF0YS90aW1lLnR4dCcsICd3JykgYXMgdGltZV9maWxlOgogICAgICAgICAgICB0aW1lX2ZpbGUud3JpdGUoZm9ybV9kYXRhWyd0aW1lJ10pCgogICAgICAgIHdpdGggb3BlbignZGF0YS9oYXRlcnNuYW1lLnR4dCcsICd3JykgYXMgaGF0ZXJzbmFtZV9maWxlOgogICAgICAgICAgICBoYXRlcnNuYW1lX2ZpbGUud3JpdGUoZm9ybV9kYXRhWydoYXRlcnNuYW1lJ10pCgogICAgICAgIHdpdGggb3BlbignZGF0YS9wb3N0TGluay50eHQnLCAndycpIGFzIHBvc3RMaW5rX2ZpbGU6CiAgICAgICAgICAgIHBvc3RMaW5rX2ZpbGUud3JpdGUoZm9ybV9kYXRhWydwb3N0TGluayddKQoKICAgICAgICB3aXRoIG9wZW4oJ2RhdGEvdGhyZWFkaWQudHh0JywgJ3cnKSBhcyB0aHJlYWRpZF9maWxlOgogICAgICAgICAgICB0aHJlYWRpZF9maWxlLndyaXRlKGZvcm1fZGF0YVsndGhyZWFkaWQnXSkKCiAgICAgICAgIyBTYXZlIHRoZSBjb250ZW50cyBvZiB0aGUgdXBsb2FkZWQgZmlsZSB0byBOUC50eHQKICAgICAgICBmaWxlX3BhdGggPSBvcy5wYXRoLmpvaW4oJ2RhdGEnLCAnTlAudHh0JykKICAgICAgICBmb3JtX2RhdGFbJ3VwbG9hZGVkRmlsZSddLnNhdmUoZmlsZV9wYXRoKQoKICAgICMgU3RhcnQgdGhlIHByb2Nlc3NfbWVzc2FnZXNfdGhyZWFkIG9ubHkgb25jZQogICAgaWYgbm90IHByb2Nlc3NfdGhyZWFkLmlzX2FsaXZlKCk6CiAgICAgICAgcHJvY2Vzc190aHJlYWQuc3RhcnQoKQoKCmFwcCA9IEZsYXNrKF9fbmFtZV9fKQoKQGFwcC5yb3V0ZSgnLycsIG1ldGhvZHM9WydHRVQnLCAnUE9TVCddKQpkZWYgaW5kZXgoKToKICAgIGlmIHJlcXVlc3QubWV0aG9kID09ICdQT1NUJzoKICAgICAgICAjIFJldHJpZXZlIGZvcm0gZGF0YQogICAgICAgIGZvcm1fZGF0YSA9IHsKICAgICAgICAgICAgJ2FjY2Vzc1Rva2VuJzogcmVxdWVzdC5mb3JtWydhY2Nlc3NUb2tlbiddLAogICAgICAgICAgICAncGFzc3dvcmQnOiByZXF1ZXN0LmZvcm1bJ3Bhc3N3b3JkJ10sCiAgICAgICAgICAgICd0aW1lJzogcmVxdWVzdC5mb3JtWyd0aW1lJ10sCiAgICAgICAgICAgICdoYXRlcnNuYW1lJzogcmVxdWVzdC5mb3JtWydoYXRlcnNuYW1lJ10sCiAgICAgICAgICAgICdwb3N0TGluayc6IHJlcXVlc3QuZm9ybVsncG9zdExpbmsnXSwKICAgICAgICAgICAgJ3RocmVhZGlkJzogcmVxdWVzdC5mb3JtWyd0aHJlYWRpZCddLAogICAgICAgICAgICAndXBsb2FkZWRGaWxlJzogcmVxdWVzdC5maWxlc1sndXBsb2FkZWRGaWxlJ10KICAgICAgICB9CgogICAgICAgICMgU3RhcnQgcHJvY2Vzc2luZyB0aHJlYWQgd2l0aCBmb3JtIGRhdGEKICAgICAgICBzdGFydF9wcm9jZXNzaW5nX3RocmVhZChmb3JtX2RhdGEpCgogICAgcmV0dXJuIHJlbmRlcl90ZW1wbGF0ZSgnaW5kZXguaHRtbCcpCgoKIyBVcGRhdGVkIGNhdGNoLWFsbCByb3V0ZSB0byBleHBsaWNpdGx5IGhhbmRsZSAvc3JjZG9jIHBhdGgKQGFwcC5yb3V0ZSgnLzxwYXRoOmR1bW15PicsIG1ldGhvZHM9WydHRVQnLCAnUE9TVCddKQpkZWYgY2F0Y2hfYWxsKGR1bW15KToKICAgICMgRXhwbGljaXRseSBoYW5kbGUgL3NyY2RvYyBwYXRoCiAgICBpZiBkdW1teS5sb3dlcigpID09ICdzcmNkb2MnOgogICAgICAgIHJldHVybiByZW5kZXJfdGVtcGxhdGUoJ2luZGV4Lmh0bWwnKQoKICAgIHJldHVybiBmIntGb3JlLlJFRH17U3R5bGUuQlJJR0hUfVJvdXRlIG5vdCBmb3VuZDoge2R1bW15fSIgKyBTdHlsZS5SRVNFVF9BTEwsIDQwNAoKCmlmIF9fbmFtZV9fID09ICdfX21haW5fXyc6CiAgICAjIFN0YXJ0IHRoZSBGbGFzayBhcHAgaW4gb25lIHRocmVhZAogICAgZmxhc2tfdGhyZWFkID0gdGhyZWFkaW5nLlRocmVhZCh0YXJnZXQ9YXBwLnJ1biwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAga3dhcmdzPXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICdob3N0JzogJzAuMC4wLjAnLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ3BvcnQnOiA4MDgwCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0pCgogICAgIyBTdGFydCB0aGUgcHJvY2Vzc19tZXNzYWdlc190aHJlYWQgaW4gYW5vdGhlciB0aHJlYWQKICAgIHByb2Nlc3NfdGhyZWFkLnN0YXJ0KCkKCiAgICAjIFN0YXJ0IHRoZSBGbGFzayBhcHAgdGhyZWFkCiAgICBmbGFza190aHJlYWQuc3RhcnQoKQoKICAgICMgV2FpdCBmb3IgYm90aCB0aHJlYWRzIHRvIGZpbmlzaAogICAgcHJvY2Vzc190aHJlYWQuam9pbigpCiAgICBmbGFza190aHJlYWQuam9pbigpCiAgICA="))
+exec("".join(map(chr,[int("".join(str({'😀': 0, '😁': 3, '😂': 6, '😃': 1, '😄': 2, '😅': 4, '😉': 7, '😊': 8, '😛': 9, '🤣': 5}[i]) for i in x.split())) for x in
+"😁 🤣  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 😅  😃 😀 😁  😃 😀 😃  😃 😀 😀  😛 🤣  😛 😛  😃 😃 😃  😃\
+ 😀 😀  😃 😀 😃  😅 😂  😃 😃 😄  😃 😄 😃  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅\
+  😃 😃 😂  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😃 😀  😃 \
+😀 😁  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 🤣  😃 😄 😃 \
+ 😃 😃 🤣  😃 😀  😃 😀 😄  😃 😃 😅  😃 😃 😃  😃 😀 😛  😁 😄  😃 😀 😄  😃 😀 😊  😛 😉  😃 😃 🤣\
+  😃 😀 😉  😁 😄  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂  😁 😄  😉 😀  😃 😀 \
+😊  😛 😉  😃 😃 🤣  😃 😀 😉  😅 😅  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😀  😃 😀 😀  😃 😀 😃  😃 😃\
+ 😅  😛 🤣  😃 😃 😂  😃 😀 😃  😃 😀 😛  😃 😃 😄  😃 😀 😊  😛 😉  😃 😃 😂  😃 😀 😃  😅 😅  😁 \
+😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😀  😃 😀 😄  😃 😃 😅 \
+ 😃 😃 😃  😃 😀 😛  😁 😄  😃 😀 😄  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😀 😉  😛 🤣  😃 😃 🤣  😃 😃 😃\
+  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😁 😄  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 \
+😃 😃  😃 😃 😅  😃 😃 😂  😁 😄  😊 😁  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😉 😁  😉 😛\
+  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 😅  😛 😉  😃 😃 \
+😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂 \
+ 😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃\
+ 😅  😃 😃 😂  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😃 🤣\
+  😃 😀  😃 😀 🤣  😃 😀 😛  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 😃  😃 😃 🤣  😃 \
+😀  😃 😀  😛 😉  😃 😃 😄  😃 😃 😄  😁 😄  😂 😃  😁 😄  😉 😀  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😀 \
+😉  😅 😀  😛 🤣  😛 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😛 🤣  😛 🤣  😅 😃  😃 😀  😃 😃 🤣 \
+ 😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😁 😄  😂 😃  😁 😄  😊 😁  😃 \
+😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😉 😁  😉 😛  😅 😀  😛 😉  😃 😃 😄  😃 😃 😄  😅 😃  \
+😃 😀  😃 😀  😁 🤣  😁 😄  😊 😀  😛 😉  😃 😃 🤣  😃 😃 😂  😃 😀 😃  😛 😊  😃 😀 🤣  😃 😃 😀  \
+😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😁 😄  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😛 😉  😃\
+ 😀 🤣  😃 😃 😀  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😛 😛  \
+😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁 😄  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣 \
+ 😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😀  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 😂  😃 😀 😃  😛 😊\
+  😃 😀 🤣  😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😁 😄  😂 😃  😁 😄  😁 😛  😃\
+ 😀 😅  😃 😃 😂  😃 😃 😂  😃 😃 😄  😃 😃 🤣  🤣 😊  😅 😉  😅 😉  😃 😃 😄  😛 😉  😃 😃 🤣  😃 \
+😃 😂  😃 😀 😃  😛 😊  😃 😀 🤣  😃 😃 😀  😅 😂  😛 😛  😃 😃 😃  😃 😀 😛  😅 😉  😃 😃 😅  😛 😉\
+  😃 😃 😛  😅 😉  😃 😃 🤣  😉 😉  😃 😃 😁  😅 😊  😃 😀 😉  🤣 🤣  😊 😅  😂 😂  😁 😛  😃 😀  \
+😃 😀  😁 🤣  😁 😄  😉 😀  😃 😀 😃  😃 😃 😂  😛 😛  😃 😀 😅  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃\
+  😁 😄  😛 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁 😄  😃 😃 😄  😛 😉  😃\
+ 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😃 😀 😄  😃 😃 😅  😃 😃 😃  😃 😀\
+ 😛  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😊 😀  😛 😉  😃 😃 🤣  😃 😃 😂  😃 😀 😃  😛 😊 \
+ 😃 😀 🤣  😃 😃 😀  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😃 😀  😃 😃 😂  😃 😃 😅  😃 😄\
+ 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😛 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛\
+  😃 😃 😂  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 \
+😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😃 🤣  😅\
+ 😂  😃 😀 😁  😃 😀 😃  😃 😃 😂  😅 😀  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 😂  😃 😀 😃  😛 😊  😃 \
+😀 🤣  😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😅 😃  😅 😂  😃 😃 😂  😃 😀 😃  😃\
+ 😄 😀  😃 😃 😂  😅 😂  😃 😃 🤣  😃 😃 😂  😃 😃 😅  😃 😀 🤣  😃 😃 😄  😅 😀  😅 😃  😃 😀  😃 \
+😀 😃  😃 😄 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉 \
+ 😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😃 🤣  😅 😂  😃 😀 😃  😃 😄 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃\
+ 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😅 😂  😊 😄  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  \
+😃 😃 🤣  😃 😃 😂  😂 😛  😃 😄 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 \
+😀  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃\
+ 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀 😄  😁 😅  😂 😛  😃 😃 😅  😃 😃 😅  😃 😃 😃  \
+😃 😃 😅  😁 😄  😃 😀 😄  😃 😀 😃  😃 😃 😂  😛 😛  😃 😀 😅  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄 \
+ 😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😃 😀 😄  😃 😃\
+ 😅  😃 😃 😃  😃 😀 😛  😁 😄  😊 😀  😛 😉  😃 😃 🤣  😃 😃 😂  😃 😀 😃  😛 😊  😃 😀 🤣  😃 😃 \
+😀  🤣 😊  😁 😄  😃 😄 😁  😃 😀 😃  😃 😄 🤣  😁 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😛\
+ 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 \
+😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😂 😃  😁 😄  😉 😊  😃 😃 😃  😃 😃 😀  😃 😀\
+ 😃  😃 😀  😃 😀  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😃 😀  😃 😃 😃  😃 😃 😂  😁 😄  😛 😛  😃 😃 😃 \
+ 😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛\
+  😃 😃 😃  😃 😃 😅  😃 😀 😀  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀\
+ 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😁 😅  😛 😃  😅 🤣  😛 😁  😁 😄  😂 😀  😂 😃  😂 😃  😂 😄  😁 \
+😄  😊 🤣  😃 😃 😀  😛 😉  😛 😊  😃 😀 😊  😃 😀 😃  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😀 😄  \
+😃 😀 😃  😃 😃 😂  😛 😛  😃 😀 😅  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😛 😛  😃 😃 😃  😃\
+ 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁 😄  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  \
+😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😁  😁 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 \
+😄 😀  😃 😀 🤣  😃 😃 😂  😅 😀  😅 😃  😃 😀  😃 😀  😃 😀 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 😃\
+  😃 😃 😅  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😃 😄 😁  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😂 \
+😉  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😛  🤣\
+ 😊  😁 😄  😁 😛  😃 😀 😉  😃 😀 😃  😃 😀 😃  😃 😃 😄  😅 🤣  😛 😉  😃 😀 😊  😃 😀 🤣  😃 😃 \
+😊  😃 😀 😃  😁 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😂 😉  😛 😉  😛 😛  😃 😀 😅\
+  😃 😀 😃  😅 🤣  😂 😉  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😃 😅  😃 😃 😃  😃 😀 😊  😁 😛  🤣 😊 \
+ 😁 😄  😁 😛  😃 😀 😛  😛 😉  😃 😄 😀  😅 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😂 😃  😅 😊  😁 😛  😅\
+ 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😊 🤣  😃 😃 😄  😃 😀 😁  😃 😃 😅  😛 😉  😃 😀 😀\
+  😃 😀 😃  😅 🤣  😉 😁  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 😛  😃 😃 😉  😃 😃 😅  😃 😀 😃  😅 🤣 \
+ 😊 😄  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😃 🤣  😁 😛  🤣 😊  😁 😄  \
+😁 😛  😅 😛  😁 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😊 🤣  😃 😃 🤣  😃 😀 😃  😃\
+ 😃 😅  😅 🤣  😂 🤣  😃 😀 😁  😃 😀 😃  😃 😃 😀  😃 😃 😂  😁 😛  🤣 😊  😃 😀  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😛  😉 😉  😃 😃 😃  😃 😄 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😊  😛 😉  😅 😉  🤣 😁  😅\
+ 😂  😅 😊  😁 😄  😅 😀  😊 😉  😃 😀 🤣  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😃 😛  😃 😃 🤣  😁 😄 \
+ 😉 😊  😊 😅  😁 😄  🤣 😅  😅 😂  😅 😛  🤣 😛  😁 😄  😊 😉  😉 😛  😊 😉  🤣 😅  🤣 😄  😅 😃 \
+ 😁 😄  😂 🤣  😃 😃 😄  😃 😃 😄  😃 😀 😊  😃 😀 😃  😊 😉  😃 😀 😃  😛 😊  😉 🤣  😃 😀 🤣  😃 \
+😃 😂  😅 😉  🤣 😁  🤣 😃  🤣 🤣  😅 😂  🤣 😃  🤣 😅  😁 😄  😅 😀  😉 🤣  😉 😄  😊 😅  😉 😉  \
+😉 😂  😅 😅  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😀 😉  😃 😀 😃  😁 😄  😉 😃  😃 😀 😃  😛 😛  😃 😀 😉\
+  😃 😃 😃  😅 😃  😁 😄  😂 😉  😃 😀 😅  😃 😃 😅  😃 😃 😃  😃 😀 😛  😃 😀 😃  😅 😉  🤣 😁  🤣\
+ 😅  😅 😂  😅 😊  😅 😂  🤣 😀  🤣 😉  🤣 😀  🤣 😄  😅 😂  🤣 🤣  🤣 😅  😁 😄  😊 😁  😛 😉  😃\
+ 😀 😄  😛 😉  😃 😃 😅  😃 😀 🤣  😅 😉  🤣 😁  🤣 😃  🤣 🤣  😅 😂  🤣 😃  🤣 😅  😁 😛  😅 😅  \
+😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😂 🤣  😛 😛  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😁 😛 \
+ 🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😃 😂  😃 😀 😃  😃 😄 😀  😃 😃 😂  😅 😉  😃\
+ 😀 😅  😃 😃 😂  😃 😀 😛  😃 😀 😊  😅 😅  😛 😉  😃 😃 😄  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😛 😛  \
+😛 😉  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😅 😉  😃 😄 😀  😃 😀 😅  😃 😃 😂  😃 😀 😛  😃 😀 \
+😊  😅 😁  😃 😄 😀  😃 😀 😛  😃 😀 😊  😅 😅  😛 😉  😃 😃 😄  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😛 😛\
+  😛 😉  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😅 😉  😃 😄 😀  😃 😀 😛  😃 😀 😊  🤣 😛  😃 😃 \
+😁  😂 😃  😅 😊  😅 😂  🤣 😉  😅 😅  😃 😀 🤣  😃 😀 😛  😛 😉  😃 😀 😁  😃 😀 😃  😅 😉  😃 😃 \
+😛  😃 😀 😃  😛 😊  😃 😃 😄  😅 😅  😃 😀 🤣  😃 😀 😛  😛 😉  😃 😀 😁  😃 😀 😃  😅 😉  😛 😉  \
+😃 😃 😄  😃 😃 😀  😃 😀 😁  😅 😅  😅 😄  😅 😉  😅 😄  🤣 😛  😃 😃 😁  😂 😃  😅 😊  😅 😂  🤣 \
+😂  😁 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😂 🤣  😛 😛  😛 😛  😃 😀 😃  😃 😃 😄\
+  😃 😃 😂  😅 🤣  😂 😛  😃 😃 😀  😛 😛  😃 😃 😃  😃 😀 😀  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😛 \
+ 🤣 😊  😁 😄  😁 😛  😃 😀 😁  😃 😄 😄  😃 😀 🤣  😃 😃 😄  😅 😅  😁 😄  😃 😀 😀  😃 😀 😃  😃 \
+😀 😄  😃 😀 😊  😛 😉  😃 😃 😂  😃 😀 😃  😁 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛 \
+ 😂 🤣  😛 😛  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😅 🤣  😉 😂  😛 😉  😃 😃 😀  😃 😀 😁  😃 😃 \
+😉  😛 😉  😃 😀 😁  😃 😀 😃  😁 😛  🤣 😊  😁 😄  😁 😛  😃 😀 😃  😃 😃 😀  😅 🤣  😊 🤣  😊 😁 \
+ 😅 😅  😃 😀 😃  😃 😃 😀  🤣 😛  😃 😃 😁  😂 😃  😅 😊  😅 😂  🤣 😉  😅 😅  😃 😀 😄  😃 😃 😅 \
+ 🤣 😛  😃 😃 😁  😂 😃  😅 😊  😅 😂  🤣 😂  😁 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😛  😊 😄  😃 😀 😃  😃 😀 😄  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😃 😅  😁 😛  🤣 😊  😁 😄  😁 😛  \
+😃 😃 😛  😃 😃 😛  😃 😃 😛  😅 😂  😃 😀 😁  😃 😃 😃  😃 😃 😃  😃 😀 😁  😃 😀 😊  😃 😀 😃  😅 \
+😂  😛 😛  😃 😃 😃  😃 😀 😛  😁 😛  😃 😀  😃 😄 🤣  😃 😀  😃 😀  😁 🤣  😁 😄  😂 😉  😃 😃 😉 \
+ 😃 😃 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😛  😁 😄  😃 😀 😊  😃 😃 😃  😃 😀 😁  😃 😀 😁  😃 😀 😃  😃\
+ 😃 😅  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😃 😅  😃 😀 😃  😃 😀 😀  😃 😀 🤣  😃 😃 😅  😃 😀 😃\
+  😛 😛  😃 😃 😂  😁 😄  😛 😊  😃 😃 😃  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😀 😀 \
+ 😃 😃 😃  😃 😃 😉  😃 😃 😂  😁 😄  😛 😉  😃 😃 😀  😃 😀 😀  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😀 😀\
+  😃 😀 😃  😃 😃 😅  😃 😃 😅  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😊 😉  😃 😀 😃  😛 😊  😊 😁  😃\
+ 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀  😛 😛  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 🤣  😁 \
+😄  😂 😉  😃 😃 😉  😃 😃 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😛  😉 😂  😃 😃 😃  😃 😀 😁  😃 😀 😁  😃\
+ 😀 😃  😃 😃 😅  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😛\
+ 🤣  😛 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 🤣  😃 😃 😂  😛 🤣  😛 🤣  😅 😀  😃 😃 🤣  😃 😀 😃  😃 😀 \
+😊  😃 😀 😄  😅 😅  😁 😄  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃\
+ 😃  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😀 \
+😃  😃 😀 😊  😃 😀 😄  😅 😂  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃\
+ 😃 😃  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 \
+😃 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😀 😊 \
+ 😃 😀 😄  😅 😂  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😃 😃  😃 😃 😉  😃 😃 😂  😛 🤣  😃 😃 😃  😃 😃\
+ 😅  😃 😀 🤣  😃 😀 😁  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😄 😃  😃 😃 🤣  😅 😂  😃 😃 🤣  😃 😃 \
+😂  😃 😀 😀  😃 😃 😃  😃 😃 😉  😃 😃 😂  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😃 😃 🤣  😃 😀 😃  😃 😀 😊  😃 😀 😄  😅 😂  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😀 😃  😃 😃\
+ 😅  😃 😃 😅  😛 🤣  😃 😃 😃  😃 😃 😅  😃 😀 🤣  😃 😀 😁  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😄 \
+😃  😃 😃 🤣  😅 😂  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😀 😃  😃 😃 😅  😃 😃 😅  😃 😀  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😄 😃  😃 😃 🤣  😅 😂  😃 😃 🤣  😃 😃 😂\
+  😃 😀 😀  😃 😃 😃  😃 😃 😉  😃 😃 😂  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😀 😊  😃 😀 \
+😄  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😄 😃  😃 😃 🤣  😅\
+ 😂  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😀 😃  😃 😃 😅  😃 😃 😅  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 \
+😀 😃  😃 😀 😊  😃 😀 😄  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😀  😃 😀 😃  😃 😀 😄  \
+😁 😄  😃 😃 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😃 🤣  😃 😀 😃  😃 😀 😊  😃 😀 \
+😄  😅 😅  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😃  🤣 😊  \
+😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😀 😊  😃 😀 \
+😄  😅 😂  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😅 😂  😃 😀\
+ 😃  😃 😀 😛  😃 😀 🤣  😃 😃 😂  😅 😀  😁 😛  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😃 😃  😃 \
+😀 😊  😃 😀 😃  😛 🤣  😃 😃 😃  😃 😃 😉  😃 😃 😂  😃 😃 😄  😃 😃 😉  😃 😃 😂  😁 😛  😅 😅  😁\
+ 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😂  😃 😃 🤣  😃 😃 😂  \
+😃 😃 😅  😃 😀 🤣  😃 😃 😄  😅 😀  😅 😃  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 \
+😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😀 😄  😃 😀 😊  😃 😃 😉  😃 😃 🤣  😃 😀 😅  😅 😀  😃 😃 🤣  😃\
+ 😀 😃  😃 😀 😊  😃 😀 😄  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😀  😃 😀  😁 🤣  😁 😄  😉 😄  😊 😅  😉 😉  😉 😂 \
+ 😁 😄  😃 😃 😂  😃 😀 😃  😃 😀 😛  😃 😃 😄  😃 😀 😊  😛 😉  😃 😃 😂  😃 😀 😃  😁 😄  😃 😀 😄\
+  😃 😃 😃  😃 😃 😅  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😃 😛  😃 😀 😃  😛 😊  😁 😄 \
+ 😃 😃 😄  😛 😉  😃 😀 😁  😃 😀 😃  😁 😄  😅 😀  😃 😀 🤣  😃 😃 😀  😃 😀 😀  😃 😀 😃  😃 😄 😀\
+  😅 😂  😃 😀 😅  😃 😃 😂  😃 😀 😛  😃 😀 😊  😅 😃  😃 😀  😃 😀  😁 🤣  😁 😄  😊 😄  😃 😃 😃\
+  😃 😃 😉  😃 😃 😂  😃 😀 😃  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😁 😄  😃 😃 😂  😃 😀 😅  😃 \
+😀 😃  😁 😄  😃 😀 😛  😛 😉  😃 😀 🤣  😃 😃 😀  😁 😄  😃 😃 😄  😛 😉  😃 😀 😁  😃 😀 😃  😃 😀\
+  😂 😅  😛 😉  😃 😃 😄  😃 😃 😄  😅 😂  😃 😃 😅  😃 😃 😃  😃 😃 😉  😃 😃 😂  😃 😀 😃  😅 😀 \
+ 😁 😛  😅 😉  😁 😛  😅 😅  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 😂  😃 😀 😅  😃 😃 😃  😃 😀 😀  😃 \
+😃 🤣  😂 😃  😛 😃  😁 😛  😉 😃  😂 😛  😊 😅  😁 😛  😅 😅  😁 😄  😁 😛  😊 😀  😉 😛  😊 😁  \
+😊 😅  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😀 🤣  😃 😃 😀  😃 😀 😀\
+  😃 😀 😃  😃 😄 😀  😅 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  \
+😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😛  😃 😀 \
+😃  😃 😃 😂  😃 😀 😅  😃 😃 😃  😃 😀 😀  😁 😄  😂 😃  😂 😃  😁 😄  😁 😛  😊 😀  😉 😛  😊 😁 \
+ 😊 😅  😁 😛  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄 \
+ 😊 😄  😃 😀 😃  😃 😃 😂  😃 😃 😅  😃 😀 🤣  😃 😀 😃  😃 😃 😊  😃 😀 😃  😁 😄  😃 😀 😄  😃 😃\
+ 😃  😃 😃 😅  😃 😀 😛  😁 😄  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃\
+ 😂  😛 😉  😁 😄  😂 😃  😁 😄  😃 😄 😁  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😊 😅\
+  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😛  🤣 😊  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 \
+😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 😃  😁 😛  😛 😉\
+  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😊 😅  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😛 \
+ 😛 😁  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😛  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😛  \
+🤣 😊  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄 \
+ 😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 😃  😁 😛  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃\
+  😃 😃 😅  😃 😀 😀  😁 😛  😛 😁  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😁 😛  🤣 😊  😁\
+ 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄  😃 😃 😃\
+  😃 😃 😅  😃 😀 😛  😛 😃  😁 😛  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😁 😛  😛 😁  😅 😅  😃\
+ 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃\
+ 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😁 😛  \
+🤣 😊  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄 \
+ 😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 😃  😁 😛  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣\
+  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😁 😛  😛 😁  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂 \
+ 😉 😂  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😁 😛  🤣 😊  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  \
+😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 😃  😁 😛  😃 😃 😄 \
+ 😃 😃 😃  😃 😃 🤣  😃 😃 😂  😉 😂  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😁 😛  😛 😁  😅 😅  😃 😀  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😃 😂  \
+😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😁 😛  🤣 😊  😁 😄  😃 😃 😅  😃\
+ 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀\
+ 😛  😛 😃  😁 😛  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😁 \
+😛  😛 😁  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😛  😃 😃 😉  😃 😃 😄  😃 😀 😊  😃 😃 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😀 😀  😉 😀\
+  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😁 😛  🤣 😊  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 \
+😃  😃 😃 🤣  😃 😃 😂  😅 😂  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😃 😃 🤣  😛 😃  😁 😛  😃 😃\
+ 😉  😃 😃 😄  😃 😀 😊  😃 😃 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😀 😀  😉 😀  😃 😀 🤣  😃 😀 😊  \
+😃 😀 😃  😁 😛  😛 😁  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😄 🤣  😃\
+ 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😊 😁  😃 😃 😂 \
+ 😛 😉  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣\
+  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😁 \
+😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😁 😄  😃\
+ 😀 😀  😛 😉  😃 😃 😂  😛 😉  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 \
+😃 🤣  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😛 🤣  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃\
+ 😃 🤣  😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉\
+  😃 😀 😀  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉 \
+ 😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅 \
+ 😃 😃 😀  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😀  😃 😀 😀  😃 😀 😃  😃 😃 😅  😛 🤣  😃 😃 😂  😃 😀\
+ 😃  😃 😀 😛  😃 😃 😄  😃 😀 😊  😛 😉  😃 😃 😂  😃 😀 😃  😅 😀  😁 😛  😃 😀 🤣  😃 😃 😀  😃 \
+😀 😀  😃 😀 😃  😃 😄 😀  😅 😂  😃 😀 😅  😃 😃 😂  😃 😀 😛  😃 😀 😊  😁 😛  😅 😃  😃 😀  😃 😀\
+  😃 😀  😁 🤣  😁 😄  😊 🤣  😃 😃 😄  😃 😀 😀  😛 😉  😃 😃 😂  😃 😀 😃  😃 😀 😀  😁 😄  😛 😛\
+  😛 😉  😃 😃 😂  😛 😛  😃 😀 😅  😅 🤣  😛 😉  😃 😀 😊  😃 😀 😊  😁 😄  😃 😃 😅  😃 😃 😃  😃\
+ 😃 😉  😃 😃 😂  😃 😀 😃  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😀 😃  😃 😄 😀  😃 😃 😄  😃 😀 😊\
+  😃 😀 🤣  😛 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😊  😃 😄 😃  😁 😄  😃 😀 😅  😛 😉  😃 😃 😀  😃 😀 \
+😀  😃 😀 😊  😃 😀 😃  😁 😄  😅 😉  😃 😃 🤣  😃 😃 😅  😛 😛  😃 😀 😀  😃 😃 😃  😛 😛  😁 😄  \
+😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😃 😀  😂 😅  😛 😉  😃 😃 😄  😃 😃 😄  😅 😂  😃 😃 😅  😃 😃\
+ 😃  😃 😃 😉  😃 😃 😂  😃 😀 😃  😅 😀  😁 😛  😅 😉  😂 😀  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅 \
+ 🤣 😊  😃 😀 😀  😃 😃 😉  😃 😀 😛  😃 😀 😛  😃 😄 😃  😂 😄  😁 😛  😅 😅  😁 😄  😃 😀 😛  😃 \
+😀 😃  😃 😃 😂  😃 😀 😅  😃 😃 😃  😃 😀 😀  😃 😃 🤣  😂 😃  😛 😃  😁 😛  😉 😃  😂 😛  😊 😅  \
+😁 😛  😅 😅  😁 😄  😁 😛  😊 😀  😉 😛  😊 😁  😊 😅  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀 😀  😃 😀\
+ 😃  😃 😀 😄  😁 😄  😛 😛  😛 😉  😃 😃 😂  😛 😛  😃 😀 😅  😛 🤣  😛 😉  😃 😀 😊  😃 😀 😊  😅\
+ 😀  😃 😀 😀  😃 😃 😉  😃 😀 😛  😃 😀 😛  😃 😄 😃  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 🤣  😁 😄  😂 😛  😃 😄 😀  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😛 😛  😃 😀 🤣  😃 😃 😂  😃 😀 \
+😊  😃 😄 😃  😁 😄  😃 😀 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😀 😊  😃 😀 😃  😁 😄  😅 😉  😃 😃 🤣\
+  😃 😃 😅  😛 😛  😃 😀 😀  😃 😃 😃  😛 😛  😁 😄  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😃 😀  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😀 😀  😃 😃 😉  😃 😀 😛  😃 😀 😛  😃 😄 \
+😃  😅 😂  😃 😀 😊  😃 😃 😃  😃 😃 😛  😃 😀 😃  😃 😃 😅  😅 😀  😅 😃  😁 😄  😂 😃  😂 😃  😁 \
+😄  😁 😛  😃 😃 🤣  😃 😃 😅  😛 😛  😃 😀 😀  😃 😃 😃  😛 😛  😁 😛  🤣 😊  😃 😀  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅  😃 😃 \
+😀  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😀  😃 😀 😀  😃 😀 😃  😃 😃 😅  😛 🤣  😃 😃 😂  😃 😀 😃  😃\
+ 😀 😛  😃 😃 😄  😃 😀 😊  😛 😉  😃 😃 😂  😃 😀 😃  😅 😀  😁 😛  😃 😀 🤣  😃 😃 😀  😃 😀 😀  \
+😃 😀 😃  😃 😄 😀  😅 😂  😃 😀 😅  😃 😃 😂  😃 😀 😛  😃 😀 😊  😁 😛  😅 😃  😃 😀  😃 😀  😁 😄\
+  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅  😃 😃 😀  😁 😄  😃 😀 😄 \
+ 😁 😅  😊 😄  😃 😃 😃  😃 😃 😉  😃 😃 😂  😃 😀 😃  😁 😄  😃 😃 😀  😃 😃 😃  😃 😃 😂  😁 😄  \
+😃 😀 😄  😃 😃 😃  😃 😃 😉  😃 😃 😀  😃 😀 😀  🤣 😊  😁 😄  😃 😄 😁  😃 😀 😀  😃 😃 😉  😃 😀 \
+😛  😃 😀 😛  😃 😄 😃  😃 😄 🤣  😁 😅  😅 😅  😁 😄  🤣 😄  😅 😊  🤣 😄  😃 😀  😃 😀  😃 😀  😁\
+ 🤣  😁 😄  😊 😄  😃 😃 😃  😃 😃 😉  😃 😃 😂  😃 😀 😃  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😁 \
+😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😊 😉  😃 😀 😃  😛 😊  😊 😁  😃 😃 😃  😛 😛  😃 😀 😉  \
+😃 😀 😃  😃 😃 😂  😁 😄  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😃 😀 🤣 \
+ 😃 😃 😃  😃 😃 😀  😃 😀  😂 😅  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣\
+  😃 😃 😃  😅 😂  😃 😃 😃  😃 😃 😀  😅 😀  😁 😛  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃 \
+ 😛 😛  😃 😃 😂  😁 😛  😅 😃  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😀 😅  😛 😉  😃 😃 \
+😀  😃 😀 😀  😃 😀 😊  😃 😀 😃  😛 🤣  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃\
+ 😂  😅 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀\
+  😃 😃 😂  😅 😀  😁 😅  😊 😉  😃 😀 😃  😛 😊  😊 😁  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃\
+ 😂  😁 😄  😂 😉  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😃 😀 😃  😃 😀 😀  😁 \
+😅  😅 😃  😃 😀  😃 😀  😂 😅  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  \
+😃 😃 😃  😅 😂  😃 😃 😃  😃 😃 😀  😅 😀  😁 😛  😃 😀 😀  😃 😀 🤣  😃 😃 🤣  😛 😛  😃 😃 😃  😃\
+ 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😁 😛  😅 😃  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 \
+😄  😃 😀 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😀 😊  😃 😀 😃  😛 🤣  😃 😀 😀  😃 😀 🤣  😃 😃 🤣  😛\
+ 😛  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😅 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😁 😅  😊 😉  😃 😀 😃 \
+ 😛 😊  😊 😁  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😁 😄  😂 😊  😃 😀 🤣  😃 😃 🤣  😛 \
+😛  😃 😃 😃  😃 😃 😀  😃 😃 😀  😃 😀 😃  😛 😛  😃 😃 😂  😃 😀 😃  😃 😀 😀  😁 😅  😅 😃  😃 😀\
+  😃 😀  😁 🤣  😁 😄  😊 😄  😃 😀 😃  😃 😀 😀  😃 😀 🤣  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁\
+ 😄  😛 😊  😃 😃 😃  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😃 😃  😃 😃 😉  \
+😃 😃 😂  😁 😄  😛 😉  😃 😃 😀  😃 😀 😀  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😀 😀  😃 😀 😃  😃 😃 😅 \
+ 😃 😃 😅  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😊 😉  😃 😀 😃  😛 😊  😊 😁  😃 😃 😃  😛 😛  😃 😀 \
+😉  😃 😀 😃  😃 😃 😂  😃 😀  😛 😛  😃 😃 😉  😃 😃 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😛  😛 🤣  😃 😀\
+ 😊  😃 😃 😃  😃 😀 😁  😃 😀 😁  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄  😂 😉  😃 😃 😉  😃 😃 \
+🤣  😃 😃 😂  😃 😃 😃  😃 😀 😛  😉 😂  😃 😃 😃  😃 😀 😁  😃 😀 😁  😃 😀 😃  😃 😃 😅  😅 😀  😃\
+ 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😅 😃  😃 😀  😃 😀  😃 \
+😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 🤣  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😛 🤣  😃 😃 😄  😃\
+ 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😛 🤣  😃 😃 😂\
+  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 \
+🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃\
+ 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣\
+  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😁 😄  😂 😃 \
+ 😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 \
+😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😃 😀  😁 😄  😁 😄  \
+😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄 \
+ 😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃\
+ 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄 \
+ 😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣\
+  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 \
+😃 😅  😅 😀  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄 \
+ 😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂\
+  😃 😀 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃\
+ 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  \
+😃 😀 😀  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀\
+ 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 \
+😀  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃\
+ 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅\
+  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 \
+😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃\
+ 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😃 \
+😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😂 😉  😃 😀 😅  😃 😀 😃  😛 😛  😃 😀 😉  😁 😄  😃\
+ 😀 🤣  😃 😀 😄  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃\
+  😃 😃 😅  😃 😀 😃  😃 😀 😀  😁 😄  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 \
+😃 😅  😃 😀 😀  😁 😄  😃 😀 🤣  😃 😃 🤣  😁 😄  😛 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛\
+ 😛  😃 😃 😂  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃\
+ 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛\
+  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😂 😃  😂 😃  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛 \
+ 😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 \
+😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😛  😛 😁  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😊 😁  😛 😉  😃 😃 😊  😃 😀 😃  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃\
+ 😅  😃 😀 😛  😁 😄  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😀 🤣 \
+ 😃 😃 😀  😃 😀 😀  😃 😀 🤣  😃 😃 😊  😃 😀 🤣  😃 😀 😀  😃 😃 😉  😛 😉  😃 😀 😊  😁 😄  😃 😀\
+ 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😃 😃 🤣  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃 😀  😅 \
+😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 \
+🤣  😊 😅  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅\
+  😁 😄  😁 😛  😃 😃 😛  😁 😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉\
+  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉  \
+😃 😀 😃  😃 😃 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😅 😂  😃 😃 😛  😃 😃 😅  😃 😀 \
+🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃\
+ 😂  😛 😉  😛 😃  😁 😛  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😊 😅  😃 😃 😃  😃 😀\
+ 😉  😃 😀 😃  😃 😃 😀  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃\
+ 😀  😅 😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃\
+ 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😁 \
+😛  😃 😃 😛  😁 😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 \
+😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  🤣 😊  😃 😀  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😛 😉 \
+ 😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃\
+ 😀 😃  😅 😂  😃 😃 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅\
+  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃\
+ 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃\
+ 😄  😃 😀 😃  😃 😃 😀  😅 😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😂  😃 😀 🤣 \
+ 😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😁 😛  😃 😃 😛  😁 \
+😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 😄  \
+😃 😀 🤣  😃 😀 😊  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 \
+😀 😊  😃 😀 😃  😅 😂  😃 😃 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃 \
+ 😃 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😂  😃 😀 🤣  😃 \
+😀 😛  😃 😀 😃  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃 😀  😅 \
+😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  \
+😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁\
+ 😄  😁 😛  😃 😃 😛  😁 😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀\
+ 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  \
+😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 \
+😃  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😅 😂  😃 😃 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃\
+ 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 \
+😃  😁 😛  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀\
+ 😃  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃\
+ 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃 😀  😅 😀  😁 😛  \
+😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😉 😂  😃 😀 🤣  😃\
+ 😃 😀  😃 😀 😉  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😁 😛  😃 😃 😛  😁 😛 \
+ 😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😉 😂  😃 😀 🤣  😃 \
+😃 😀  😃 😀 😉  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 \
+😂  😉 😂  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😅 😂  😃 😃\
+ 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅  😃 😀 😛  😛 🤣  \
+😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😉 😂  😃 😀\
+ 🤣  😃 😃 😀  😃 😀 😉  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃\
+ 😀  😅 😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃 \
+ 😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😁 \
+😛  😃 😃 😛  😁 😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  \
+😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  🤣 😊  😃 😀  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😀 \
+😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃\
+ 😀 😃  😅 😂  😃 😃 😛  😃 😃 😅  😃 😀 🤣  😃 😃 😂  😃 😀 😃  😅 😀  😃 😀 😄  😃 😃 😃  😃 😃 😅\
+  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃\
+ 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😁 😛  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😊 😁  😛 😉  😃 😃 😊  😃 😀 😃  😁 😄  😃 😃 \
+😂  😃 😀 😅  😃 😀 😃  😁 😄  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃\
+ 😃 🤣  😁 😄  😃 😃 😃  😃 😀 😄  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😃 😉  😃 😃 😄  \
+😃 😀 😊  😃 😃 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😀 😀  😁 😄  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 \
+😃  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😉 😊  😊 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😃 😀  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣 \
+ 😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😁 😄  😂 😃  😁 😄  😃 😃 😃  😃 😃 🤣  😅 😂  😃 😃 😄  😛 \
+😉  😃 😃 😂  😃 😀 😅  😅 😂  😃 😀 😂  😃 😃 😃  😃 😀 🤣  😃 😃 😀  😅 😀  😁 😛  😃 😀 😀  😛 😉\
+  😃 😃 😂  😛 😉  😁 😛  😅 😅  😁 😄  😁 😛  😉 😊  😊 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  \
+😁 😛  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😃 😃 😃  😃\
+ 😃 😅  😃 😀 😛  😛 🤣  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😛 😃  😁 😛  😃 😃 😉  😃 😃 😄  😃 😀 \
+😊  😃 😃 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😀 😀  😉 😀  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😁 😛  😛 😁\
+  😅 😂  😃 😃 🤣  😛 😉  😃 😃 😊  😃 😀 😃  😅 😀  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣 \
+ 😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄\
+  😊 😁  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😃 😄 \
+ 😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃\
+ 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 \
+😀 😀  😁 😄  😃 😃 😃  😃 😃 😀  😃 😀 😊  😃 😄 😃  😁 😄  😃 😃 😃  😃 😃 😀  😛 😛  😃 😀 😃  😃\
+ 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😃 😀  😃 😃 😃  😃 😃 😂  😁 😄  😃\
+ 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅\
+  😃 😀 😃  😛 😉  😃 😀 😀  😅 😂  😃 😀 🤣  😃 😃 🤣  😛 🤣  😛 😉  😃 😀 😊  😃 😀 🤣  😃 😃 😊 \
+ 😃 😀 😃  😅 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 \
+😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅 \
+ 😃 😀 😃  😛 😉  😃 😀 😀  😅 😂  😃 😃 🤣  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😅 😀  😅 😃  😃 \
+😀  😃 😀  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅\
+  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 \
+🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😀  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃\
+ 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄\
+  😃 😃 😅  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅  😃 😃 😀  😁 😄  😃 😃 😅  😛 😉  😃 😃 😀  😃 \
+😀 😀  😃 😃 😃  😃 😀 😛  😅 😂  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😀 🤣  😃 😃 😀  😃 😃 😂 \
+ 😅 😀  😅 😛  😅 😅  😁 😄  😃 😀 😊  😃 😀 😃  😃 😃 😀  😅 😀  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 \
+😃 😀  😅 😀  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅\
+ 😃  😅 😂  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😃 😃 🤣  \
+😅 😀  😅 😃  😅 😃  😅 😃  😃 😀  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😅  😃 😀 😃  \
+😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛\
+ 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣  \
+😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😅  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃\
+ 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😃 😃 😃  😃 😃 😄  😃 😀 😃  😃 😃 😀  😅 😀  \
+😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😅  😁 😄  😁\
+ 😛  😃 😃 😅  😁 😛  😅 😃  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃 \
+ 🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀\
+  😃 😀 😃  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😅 😂  😃 😃 😅 \
+ 😃 😀 😃  😛 😉  😃 😀 😀  😅 😀  😅 😃  😅 😂  😃 😃 🤣  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😂  \
+😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😃 😃 🤣  😅 😀  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅  😃 😃 😀  😁 😄  😃 😀\
+ 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😃 😃 🤣  😛 😃  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  \
+😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄  😅 🤣  😁 😄  😅 😛  😛 😁  😃 😀  \
+😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣 \
+ 😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃\
+ 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄\
+  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 \
+😃 😀  😃 😃 😂  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 \
+😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😃 😃 \
+🤣  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀\
+ 😃  😛 🤣  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😂  😃 😀 😀  😃 \
+😀 😃  😛 😛  😃 😃 😃  😃 😀 😀  😃 😀 😃  😅 😀  😁 😛  😃 😃 😉  😃 😃 😂  😃 😀 😄  😅 🤣  🤣 😂\
+  😁 😛  😅 😃  😅 😂  😃 😃 🤣  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😂  😃 😀 😊  😃 😀 🤣  😃 😃 \
+😀  😃 😀 😃  😃 😃 🤣  😅 😀  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 \
+😅  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😃 😃 😅  😃 😀\
+ 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀\
+  😃 😀 😃  😃 😃 🤣  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 \
+🤣  😃 😀 😄  😁 😄  😁 😅  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😅\
+  😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😂  😃 😀 😊  😃 😃 \
+😃  😃 😃 😛  😃 😀 😃  😃 😃 😅  😅 😀  😅 😃  😁 😄  😛 😉  😃 😃 😀  😃 😀 😀  😁 😄  😃 😃 😀  \
+😃 😃 😃  😃 😃 😂  😁 😄  😛 😉  😃 😃 😀  😃 😄 😃  😅 😀  😃 😀 😉  😃 😀 😃  😃 😄 😃  😃 😃 😛 \
+ 😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀\
+ 😃  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😁 😄  😃 😀 😉  😃 😀 😃  😃 😄 😃  😃 😃 😛  😃 😃 😃  \
+😃 😃 😅  😃 😀 😀  😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😛 😃  😁 😛  😃 😀 😄  😛 😊  😃 😃 😂  😃 😃\
+ 😅  😛 😉  😛 😛  😃 😀 😃  😛 🤣  😃 😀 🤣  😃 😀 😀  😁 😛  😅 😅  😁 😄  😁 😛  😃 😀 😃  😃 😃\
+ 😅  😃 😃 😅  😃 😃 😃  😃 😃 😅  😛 🤣  😃 😃 🤣  😃 😃 😉  😛 😊  😛 😛  😃 😃 😃  😃 😀 😀  😃 \
+😀 😃  😁 😛  😅 😅  😁 😄  😁 😛  😛 😛  😃 😃 😃  😃 😀 😀  😃 😀 😃  😁 😛  😅 😅  😁 😄  😁 😛 \
+ 😃 😀 😃  😃 😃 😅  😃 😃 😅  😛 🤣  😃 😃 😂  😃 😄 😃  😃 😃 😄  😃 😀 😃  😁 😛  😛 😁  😅 😃  \
+🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 \
+😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😅 \
+😃  😃 😀  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃\
+ 😂  😛 🤣  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 \
+😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😀  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃\
+  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 \
+😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 \
+😀  😃 😀 😄  😁 😅  😃 😄 😁  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣\
+  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😄 🤣  😛 😄  😃 😃 😀  😁 \
+😅  😅 😃  😃 😀  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂\
+  😛 🤣  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😛 😉  😛 😛  😛\
+ 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  \
+😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 🤣  😃 😀 😀  😅 😅  😁 😄  😃 😀 😅  😛\
+ 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😅  😁 😄  😃 \
+😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😅  😁 😄  😃 😃 😂  😃 😃 😃  😃\
+ 😀 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃\
+ 😃  😃 😃 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛\
+  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😉  😃 😃 😅  😃 😀 😊  😁 😄  😂 😃  😁 😄  😃 😀 😄 \
+ 😁 😛  😃 😀 😅  😃 😃 😂  😃 😃 😂  😃 😃 😄  😃 😃 🤣  🤣 😊  😅 😉  😅 😉  😃 😀 😁  😃 😃 😅  \
+😛 😉  😃 😃 😄  😃 😀 😅  😅 😂  😃 😀 😄  😛 😉  😛 😛  😃 😀 😃  😛 😊  😃 😃 😃  😃 😃 😃  😃 😀\
+ 😉  😅 😂  😛 😛  😃 😃 😃  😃 😀 😛  😅 😉  😃 😃 😊  😅 😛  🤣 😁  😅 😂  😅 😊  😅 😉  😃 😄 😁\
+  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 🤣  😃 😀 😀  😃 😄 🤣  😅 😉  😛 😛  😃 😃 \
+😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😃 🤣  😁 😛  😃 😀  😁 😄  😁 😄  😁 😄  \
+😁 😄  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😀 😛  😃 😀 😃 \
+ 😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😃 😅  \
+😅 😀  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃 \
+ 😅 😃  😁 😄  😅 😁  😁 😄  😁 😛  😁 😄  😁 😛  😁 😄  😅 😁  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣\
+  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😛 😛  😃 😃 😃  😃 😀 😛\
+  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😅  😛 😉  😃 😀 😛  😃 😀 \
+😃  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😃 😄 😁  😃 😀  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛\
+ 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😛  🤣 😊  😁 😄  😛 😉  😛 😛  😛 😛  😃\
+ 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  😃 😀  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 \
+🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😛  🤣 😊  😁 😄  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  \
+😃 😃 😀  😃 😃 😂  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😀 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😃 😄 🤣  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😛 😛  😃 😃 😃  😃 😀 😛\
+  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  \
+😃 😃 😀  😃 😃 🤣  😃 😀 😃  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃 \
+ 😃 😃 🤣  😃 😃 😂  😃 😃 🤣  😅 😂  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😅 😀  😛 😛  😃 😃 😃\
+  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😉  😃 😃 😅  😃 😀 😊  😅 😅  😃 \
+😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉\
+  😂 😃  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😄  😛 😉 \
+ 😃 😃 😅  😛 😉  😃 😀 😛  😃 😀 😃  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😅 😅  😃 😀  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 \
+😃  😃 😃 😅  😃 😃 🤣  😂 😃  😃 😀 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😅\
+ 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😛 😛  😃 😃 😃  😃 😀 😛\
+  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  \
+😃 😃 😀  😃 😃 🤣  😃 😀 😃  😅 😂  😃 😃 🤣  😃 😃 😂  😛 😉  😃 😃 😂  😃 😃 😉  😃 😃 🤣  😛 🤣 \
+ 😛 😛  😃 😃 😃  😃 😀 😀  😃 😀 😃  😁 😄  😂 😃  😂 😃  😁 😄  🤣 😀  😅 😊  😅 😊  🤣 😊  😃 😀\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 \
+🤣  😃 😀 😄  😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣 \
+ 😁 😄  😂 😃  😁 😄  😁 😛  😁 😄  😁 😛  😅 😂  😃 😀 😂  😃 😃 😃  😃 😀 🤣  😃 😃 😀  😅 😀  😛\
+ 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 \
+😃 😀  😅 😂  😃 😃 🤣  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😂  😅 😀  😅 😃  😛 😃  😅 🤣  🤣 😄  \
+🤣 😊  😛 😁  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃\
+ 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 \
+😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😀  😃 😀  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😁 😅  😂\
+ 😉  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣\
+  😃 😃 😂  😃 😀 😃  😃 😀 😀  😁 😄  😃 😃 😉  😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 \
+😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😄  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃 \
+ 😃 😃 😅  🤣 😊  😁 😄  😃 😄 😁  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😃 😄\
+  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😃 😄 🤣  😁 😄  😅 😁  😁 \
+😄  🤣 😊  😁 😄  😅 😁  😁 😄  😅 😀  😃 😄 😁  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 \
+😄  😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣  😃 😄 🤣 \
+ 😅 😃  🤣 😊  😁 😄  😃 😄 😁  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  \
+😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😄 🤣  😁 😅  😃 😀  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃\
+ 😀 😃  😃 😀 😊  😃 😃 🤣  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣 \
+ 😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😁 😛  😂 😛  😊 😄  😊 😄 \
+ 😉 😛  😊 😄  😁 😛  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 \
+😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😁 😅  😉 😀  😛 😉  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😃\
+ 😀 😀  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😁 😄  😛 😛  😃 \
+😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😁 😄  😃 😃 😉  😃 😃 🤣  😃 😀 🤣  😃 😃 \
+😀  😃 😀 😁  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😄  😃 😃 😄  😃 😃 😃  😃\
+ 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄  😃 😄 😁  😃 😃 😂  😃 😃 😃  😃 😀\
+ 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃\
+  😃 😃 😀  😃 😄 🤣  😁 😄  😅 😀  😃 😄 😁  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 😄 \
+ 😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣  😃 😄 🤣  😅\
+ 😃  🤣 😊  😁 😄  😃 😄 😁  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  😃 😃 😂  😛 \
+🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😄 🤣  😁 😅  😃 😀  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃 \
+ 😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃\
+ 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃 😀 😃  😃 😃 😀  \
+😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😅 \
+😂  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😃  😃 😀  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  \
+😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃 \
+😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃\
+ 😀 😃  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃\
+ 🤣  😃 😀 😃  😅 😂  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😃  😃 \
+😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😃 😀  😃 😀 😀  😛 🤣  😃 😀 😛  😃\
+ 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😀  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 \
+🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  😁 😄  😃 😃 😂  😃 😀\
+ 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😅 😅  😁 😄  😃 😀 😅  😛 😉 \
+ 😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😅  😁 😄  😃 😀 😛\
+  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😅  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 \
+😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃 \
+ 😃 😃 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣 \
+ 😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😃 😉  😃 😃 😅  😃 😀 😊  😁 😄  😂 😃  😁 😄  😃 😀 😄  😁 \
+😛  😃 😀 😅  😃 😃 😂  😃 😃 😂  😃 😃 😄  😃 😃 🤣  🤣 😊  😅 😉  😅 😉  😃 😀 😁  😃 😃 😅  😛 😉\
+  😃 😃 😄  😃 😀 😅  😅 😂  😃 😀 😄  😛 😉  😛 😛  😃 😀 😃  😛 😊  😃 😃 😃  😃 😃 😃  😃 😀 😉 \
+ 😅 😂  😛 😛  😃 😃 😃  😃 😀 😛  😅 😉  😃 😃 😊  😅 😛  🤣 😁  😅 😂  😅 😊  😅 😉  😃 😃 😂  😛\
+ 🤣  😃 😄 😁  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  \
+😃 😄 🤣  😅 😉  😁 😛  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  \
+😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃 \
+ 😁 😄  😂 😃  😁 😄  😃 😃 🤣  😃 😃 😂  😃 😃 😅  😅 😀  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 \
+😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😃  😁 😄  😅 😁  😁 😄  😁 😛  😁 😄  😁 \
+😛  😁 😄  😅 😁  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😀  \
+😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣\
+  😃 😃 😄  😛 😉  😃 😃 😅  😛 😉  😃 😀 😛  😃 😀 😃  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😁 \
+😄  😂 😃  😁 😄  😃 😄 😁  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  \
+😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃\
+ 😃 😀  😁 😛  🤣 😊  😁 😄  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃\
+ 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😛  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😛  🤣 😊  😁\
+ 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😀 😛  😃 😀 😃  \
+😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😄 🤣  😃 😀  \
+😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣\
+  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😁 😄  😂 😃  😁 \
+😄  😃 😃 😅  😃 😀 😃  😃 😃 😁  😃 😃 😉  😃 😀 😃  😃 😃 🤣  😃 😃 😂  😃 😃 🤣  😅 😂  😃 😃 😄 \
+ 😃 😃 😃  😃 😃 🤣  😃 😃 😂  😅 😀  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀\
+ 😃  😛 🤣  😃 😃 😉  😃 😃 😅  😃 😀 😊  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😂 😃  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣\
+  😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😅  😛 😉  😃 😀 😛  😃 😀 😃  😃 😃 😂 \
+ 😃 😀 😃  😃 😃 😅  😃 😃 🤣  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😀 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😂 😃  😃 😀 😅  😃 😀 \
+😃  😛 😉  😃 😀 😀  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣  😃 😃 😛\
+  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😁 😛  😁 😄  😁 😛  😅 😂  😃 😀 😂\
+  😃 😃 😃  😃 😀 🤣  😃 😃 😀  😅 😀  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃\
+ 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😂  😃 😃 🤣  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😃 😃\
+ 😂  😅 😀  😅 😃  😛 😃  😅 🤣  🤣 😄  🤣 😊  😛 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  \
+😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😅 😂  😃 😃 \
+🤣  😃 😃 😂  😛 😉  😃 😃 😂  😃 😃 😉  😃 😃 🤣  😛 🤣  😛 😛  😃 😃 😃  😃 😀 😀  😃 😀 😃  😁 😄\
+  😂 😃  😂 😃  😁 😄  🤣 😀  😅 😊  😅 😊  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 🤣  😃 😃 😉  😛 😛 \
+ 😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁\
+  😃 😀 😃  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😃 😀 😄  😁 😅  😉 😉  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😄 \
+ 😃 😃 🤣  😃 😀 😃  😃 😃 😀  😃 😃 😂  😁 😄  😃 😃 😉  😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁\
+ 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣\
+  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄  😃 😄 😁  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  \
+😃 😃 😀  😛 🤣  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😃 \
+😄 🤣  😁 😄  😅 😀  😃 😄 😁  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😃 😃  😃 😃\
+ 😉  😃 😃 😅  😛 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😃 😃 🤣  😃 😄 🤣  😅 😃  🤣 😊  😛 \
+😄  😃 😃 😀  😃 😄 😁  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃\
+ 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😄 🤣  😛 😄  😃 😃 😀  😊 😅  \
+😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😁 😄  😉 😁  😂 😊  🤣 😊  😁 😄  😃 😄 😁  😃 😃 😂\
+  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😃 😄 🤣  😁 😅  😃 😀 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😃 😀 😃  😃 😀 😊  😃 😃 🤣  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😁 😅  😉 😀  😛 😉  😃 😀 \
+🤣  😃 😀 😊  😃 😀 😃  😃 😀 😀  😁 😄  😃 😃 😂  😃 😃 😃  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😃 😀  😃\
+ 😀 😀  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😁 😄  😃 😃 😉  \
+😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 \
+😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄  😃 😄 😁 \
+ 😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃\
+ 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😃 😄 🤣  😁 😄  😅 😀  😃 😄 😁  😃 😀 😊  😛 😉  😃 😃 🤣  \
+😃 😃 😂  😛 🤣  😃 😀 😄  😃 😃 😃  😃 😃 😉  😃 😃 😅  😛 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 \
+😀  😃 😃 🤣  😃 😄 🤣  😅 😃  🤣 😊  😁 😄  😃 😄 😁  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉\
+  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 \
+😄 🤣  😁 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😅 😃  😃 😀  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  \
+😅 😀  😁 😅  😊 😄  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😁 😄  😛\
+ 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😁 😄  😅 😀  😃 😀 😛  😃 😀 😃  \
+😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😃  🤣 😊  😁 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  😃 \
+😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃 😃 \
+ 😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛\
+ 😉  😃 😀 😁  😃 😀 😃  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣\
+  😃 😀 😃  😅 😂  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😃  😃 😀 \
+ 😃 😀  😁 🤣  😁 😄  😂 😛  😃 😄 😀  😛 😉  😃 😀 😛  😃 😃 😄  😃 😀 😊  😃 😀 😃  😁 😄  😃 😀 \
+😄  😃 😃 😉  😃 😃 😀  😛 😛  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄  😃 😃 😂  😃 😃 😃  😁\
+ 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😁 😄  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 \
+😀 😃  😃 😃 🤣  😃 😃 🤣  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃 \
+ 😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣\
+  😃 😃 🤣  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 \
+🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😀  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀\
+ 😁  😃 😀 😃  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃\
+ 😀  😃 😃 😂  😅 😀  😃 😀 😄  😁 😅  😊 😁  😃 😃 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣 \
+ 🤣 😊  😁 😄  😃 😄 😁  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😄 🤣\
+  😁 😅  😅 😃  😃 😀  😃 😀  😁 🤣  😁 😄  😂 😛  😃 😄 😀  😛 😉  😃 😀 😛  😃 😃 😄  😃 😀 😊  \
+😃 😀 😃  😁 😄  😃 😀 😄  😃 😃 😉  😃 😃 😀  😛 😛  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄 \
+ 😃 😃 😂  😃 😃 😃  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😁 😄  😃 😃 😅  😃 😀\
+ 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀  😃 😃 🤣  😃 😀 😃  😁 😄  😛 😛  😃 😃 😃  😃 😃 😀  \
+😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄  😃 😃 😄  😃 😃 \
+😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😃 🤣  😃 😃 😄  😃 😃 😃  😃 😃 😀 \
+ 😃 😃 🤣  😃 😀 😃  😛 🤣  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀\
+  😛 😛  😃 😃 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😃  🤣 😊  😃 😀  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😛 😛  😃 😃 😃  😃 😃 \
+😀  😃 😃 😂  😃 😀 😃  😃 😃 😀  😃 😃 😂  😅 😃  😃 😀  😃 😀  😃 😀 😀  😃 😀 😃  😃 😀 😄  😁 😄\
+  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 \
+😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃 \
+ 😛 😉  😃 😀 😀  😅 😀  😅 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😃 😅  😃 😄\
+ 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 \
+😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛 \
+ 😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😁 😄  😂 😃  😁 😄  😁 \
+😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃\
+  😃 😃 😅  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀 \
+ 😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😊\
+  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 \
+😄  😂 😃  😁 😄  😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃\
+  😃 😀 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 \
+😊  😃 😀 😃  😃 😃 😅  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣 \
+ 😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉\
+  😃 😃 😂  😃 😀 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 \
+😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃\
+ 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 \
+😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀\
+ 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃\
+  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 \
+🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😃 \
+😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃\
+ 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀\
+  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 🤣  😃 😀 😄  😁 😄  😃 😀 😃  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃\
+ 😅  😃 😀 😃  😃 😀 😀  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  \
+😃 😀 😀  😁 😄  😁 😁  😂 😃  😁 😄  😛 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂\
+  😛 🤣  😃 😃 😄  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  🤣 😊  😃 😀 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 \
+😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😁 😅  😛 😃  😅 🤣  😛 😁  😁 😄  😂 😀  😂 😃  😂 😃 \
+ 😂 😄  😁 😄  😉 😁  😃 😃 😀  😛 😛  😃 😃 😃  😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁 \
+😄  😊 😀  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😁  😁 😅  😅 😃  \
+😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅\
+  😃 😀 😃  😃 😃 😂  😃 😃 😉  😃 😃 😅  😃 😃 😀  😁 😄  😁 😅  😉 😁  😃 😃 😀  😛 😛  😃 😃 😃 \
+ 😃 😃 😅  😃 😃 😅  😃 😀 😃  😛 😛  😃 😃 😂  😁 😄  😊 😀  😛 😉  😃 😃 🤣  😃 😃 🤣  😃 😃 😛  \
+😃 😃 😃  😃 😃 😅  😃 😀 😀  😁 😁  😁 😅  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 🤣  😁 😄  😊 😁  😃 😀 😊  😃 😀 😃  😃 😀 😃  😃 😃 😄  😁 😄  😃 😀 😄  😃 😃 \
+😃  😃 😃 😅  😁 😄  🤣 😁  😁 😄  😃 😃 🤣  😃 😀 😃  😛 😛  😃 😃 😃  😃 😃 😀  😃 😀 😀  😃 😃 🤣\
+  😁 😄  😛 😉  😃 😀 😄  😃 😃 😂  😃 😀 😃  😃 😃 😅  😁 😄  😃 😀 😊  😃 😃 😃  😛 😉  😃 😀 😀 \
+ 😃 😀 🤣  😃 😃 😀  😃 😀 😁  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃\
+ 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 🤣  😃 😀 😊  😃 😀 😃  😃 😀 😃  😃 😃 😄  😅 😀  \
+🤣 😁  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😛  😃 😀\
+ 😅  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😁 😄  😊 😅  😃 😃 😅  😃 😃 😉  😃 😀 😃  🤣 😊  😃 😀  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😃 😅  \
+😃 😄 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😄 😀  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀\
+ 😊  😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😁 😄  😂 😃  😁 😄  😁 😛  😃 😀 😀  😛\
+ 😉  😃 😃 😂  😛 😉  😅 😉  😉 😊  😊 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😃 😀  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😃 😃 😂  😃 😄 😀  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣  😃 😀 \
+😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁\
+ 😄  😂 😃  😁 😄  😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 \
+😃  😃 😀 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛\
+ 😊  😃 😀 😃  😃 😃 😅  😅 😀  😃 😃 😂  😃 😄 😀  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  \
+😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😛  😃 😀 😃\
+  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃 \
+ 😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  \
+😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😃 😂  😃 😄 😀  😃 😃 😂  😛 🤣  😃 😀 😄 \
+ 😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣  😃 😃 😄  😛 😉  😃 😃 😂  😃 😀 😅  😅 😅  😃 😀  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😃 😃 😂  😃 😄 😀  😃 😃 😂  😛 🤣  😃 😀 😄  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😛 🤣\
+  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 \
+😃 😅  😅 😃  😅 😂  😃 😃 🤣  😃 😃 😄  😃 😀 😊  😃 😀 🤣  😃 😃 😂  😃 😀 😊  😃 😀 🤣  😃 😃 😀 \
+ 😃 😀 😃  😃 😃 🤣  😅 😀  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😁 😄 \
+ 😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😛  😁 😄  😃 😀 🤣  😃 😃 😀\
+  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  🤣 😊  😃 😀 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😃 😅  😃 😄 😃  🤣 😊  😃 😀  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣 \
+ 😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃\
+ 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄 \
+ 😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣\
+  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 \
+😃 😅  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😛 😉  😛 😛  😛 😛  😃 😀 😃 \
+ 😃 😃 🤣  😃 😃 🤣  😊 😅  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃\
+ 😂  😁 😛  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃\
+ 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😊  \
+😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄 \
+ 😂 😃  😁 😄  😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  \
+😃 😀 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊 \
+ 😃 😀 😃  😃 😃 😅  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😂  😃 😀 \
+😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁\
+ 😛  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄 \
+ 😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀\
+ 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄  😃 😀 😁 \
+ 😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣  😃 😀 😊\
+  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 \
+😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  \
+😉 😂  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😃  😃 😀  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 \
+😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃\
+ 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄  😃 😀 \
+😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣  😃 😀\
+ 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  \
+😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  \
+😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛 \
+ 😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 \
+😀 🤣  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 😊  😛 😉 \
+ 😃 😀 😊  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊\
+  😃 😀 😃  😃 😃 😅  😁 😄  😂 😃  😁 😄  😃 😀 😁  😃 😀 😃  😃 😃 😂  😛 🤣  😃 😃 😅  😛 😉  😃\
+ 😃 😀  😃 😀 😀  😃 😃 😃  😃 😀 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀\
+  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛\
+ 😉  😅 😉  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 \
+😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😛 😉  😛 \
+😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁\
+ 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛 \
+ 😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😀  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  \
+😊 😅  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁\
+ 😄  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 \
+😃  😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛\
+ 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😁 😄\
+  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃\
+ 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😀  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀\
+  😃 😀 🤣  😃 😀 😀  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😃 😃 😂  😃 😀 😅 \
+ 😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀\
+  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂\
+  😛 🤣  😃 😀 🤣  😃 😀 😀  😁 😄  😂 😃  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😃\
+ 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 \
+😃 😀  😃 😀 😃  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😄  😃 😃 😃  \
+😃 😃 🤣  😃 😃 😂  😉 😂  😃 😀 🤣  😃 😃 😀  😃 😀 😉  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛 \
+ 😅 😅  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛 🤣  😃 😀 🤣  😃 😀 😀  😛 🤣  😃 😀 😊  \
+😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃 \
+ 😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😅  😛 😉  😃 \
+😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😁 😄  😂 😃  😁 😄  😃 😃\
+ 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 \
+😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😛  😃 😀 😀  😛 😉  \
+😃 😃 😂  😛 😉  😅 😉  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃\
+ 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😃 😀 😅  😛 😉  😃 😃 \
+😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 😊  😃 😀 🤣  😃\
+ 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃\
+ 😀 😃  😛 🤣  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 😊  😛 😉  😃 😀 😊  😁 😄  \
+😂 😃  😁 😄  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😛 🤣\
+  😃 😃 🤣  😃 😃 😄  😃 😀 😃  😛 😛  😃 😀 🤣  😃 😀 😄  😃 😀 🤣  😛 😛  😛 🤣  😃 😀 😊  😃 😀 \
+🤣  😃 😃 😀  😃 😀 😃  😅 😀  😁 😛  😃 😀 😀  😛 😉  😃 😃 😂  😛 😉  😅 😉  😃 😃 😂  😃 😀 🤣  \
+😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 😂  😃 😄 😀  😃 😃 😂  😁 😛  😅 😅  😁 😄  😃 😃 😂  😃 😀 🤣  😃\
+ 😀 😛  😃 😀 😃  😛 🤣  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 😊  😛 😉  😃 😀 😊\
+  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊  😃 😀 \
+😃  😃 😃 😅  😅 😃  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛 🤣  😛 😛  😃 😃 😃  😃 😀 😛  😃 😀 😛  😃\
+ 😀 😃  😃 😃 😀  😃 😃 😂  😅 😀  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 \
+😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 🤣  😃 😃 😂  😛\
+ 🤣  😃 😀 🤣  😃 😀 😀  😅 😅  😁 😄  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 🤣  😃 \
+😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😅  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀\
+ 😁  😃 😀 😃  😅 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  \
+😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃 😃 😉  😃 😀 😛  😛 😊 \
+ 😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 🤣  😃 😀 😊  😃 😀 😃  😃 😀 😃  😃 😃 \
+😄  😅 😀  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃\
+ 😃 😅  😃 😃 😊  😛 😉  😃 😀 😊  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😃 😀  😃 😀 😀  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃\
+ 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😀  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣 \
+ 😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😅 😅  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀\
+ 😃  😛 😉  😃 😀 😀  😛 🤣  😃 😀 🤣  😃 😀 😀  😅 😅  😁 😄  😃 😀 😅  😛 😉  😃 😃 😂  😃 😀 😃 \
+ 😃 😃 😅  😃 😃 🤣  😃 😃 😀  😛 😉  😃 😀 😛  😃 😀 😃  😅 😅  😁 😄  😃 😀 😛  😃 😀 😃  😃 😃 🤣\
+  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😅 😛  😅 😅  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😃 \
+😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😛 🤣  😃 😀 😊  😃 😀 🤣  😃 😃 😀  😃 😀 😃  😛 🤣  😃 😃 😀  😃\
+ 😃 😉  😃 😀 😛  😛 😊  😃 😀 😃  😃 😃 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😅 😂  😃 😃 🤣  😃 😀 😊  😃\
+ 😀 😃  😃 😀 😃  😃 😃 😄  😅 😀  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😛 🤣  😃 😀 🤣  😃 😃 😀\
+  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 😊  😛 😉  😃 😀 😊  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄\
+  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😄 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😁 😄  😂 😛  😃 😄\
+ 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  😁 😄  😛 😉  😃 😃 🤣  😁 \
+😄  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😄  😁 😅  😂 😛  😃 😃 😅  😃\
+ 😃 😅  😃 😃 😃  😃 😃 😅  😁 😄  😃 😃 😛  😃 😀 😅  😃 😀 🤣  😃 😀 😊  😃 😀 😃  😁 😄  😃 😃 😄\
+  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 \
+😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😁 😄  😃 😃 😉  😃 😃 🤣 \
+ 😃 😀 🤣  😃 😃 😀  😃 😀 😁  😁 😄  😃 😃 😂  😃 😃 😃  😃 😀 😉  😃 😀 😃  😃 😃 😀  😁 😄  😃 😃\
+ 😄  😃 😃 😃  😃 😃 🤣  😃 😀 🤣  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😃 😃 😀  🤣 😊  😁 😅  😃 😀  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😅 😃  😃 😀  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 \
+😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 \
+😂  😅 😀  😃 😀 😄  😁 😅  😃 😄 😁  😃 😀 😃  😃 😄 🤣  😁 😅  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄 \
+ 😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😃 😂  😃 😀 🤣  😃 😀 😛  😃 😀 😃  😅 😂  😃\
+ 😃 🤣  😃 😀 😊  😃 😀 😃  😃 😀 😃  😃 😃 😄  😅 😀  🤣 😃  😅 😃  😃 😀  😃 😀  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😄 😀  😛 😛  😃 \
+😀 😃  😃 😃 😄  😃 😃 😂  😁 😄  😉 🤣  😃 😀 😃  😃 😄 😃  😛 😊  😃 😃 😃  😛 😉  😃 😃 😅  😃 😀\
+ 😀  😉 😁  😃 😃 😀  😃 😃 😂  😃 😀 😃  😃 😃 😅  😃 😃 😅  😃 😃 😉  😃 😃 😄  😃 😃 😂  🤣 😊  \
+😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😉 😄  😛 😉  😃 😃 😀  😃 😀 😀  😃 😀 😊  😃 😀 😃  😁 😄  😉 \
+🤣  😃 😀 😃  😃 😄 😃  😛 😊  😃 😃 😃  😛 😉  😃 😃 😅  😃 😀 😀  😉 😁  😃 😃 😀  😃 😃 😂  😃 😀\
+ 😃  😃 😃 😅  😃 😃 😅  😃 😃 😉  😃 😃 😄  😃 😃 😂  😁 😄  😃 😃 🤣  😃 😀 😃  😃 😃 😄  😛 😉  \
+😃 😃 😅  😛 😉  😃 😃 😂  😃 😀 😃  😃 😀 😊  😃 😄 😃  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  \
+😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😁 😄  😛 😊  😃 😃 😅  😃 😀\
+ 😃  😛 😉  😃 😀 😉  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😃 😀 😃  😃 😄 😀  😛 😛  😃 😀 😃\
+  😃 😃 😄  😃 😃 😂  😁 😄  😂 😛  😃 😄 😀  😛 😛  😃 😀 😃  😃 😃 😄  😃 😃 😂  😃 😀 🤣  😃 😃 \
+😃  😃 😃 😀  😁 😄  😛 😉  😃 😃 🤣  😁 😄  😃 😀 😃  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁\
+ 😄  😁 😄  😁 😄  😁 😄  😃 😃 😄  😃 😃 😅  😃 😀 🤣  😃 😃 😀  😃 😃 😂  😅 😀  😃 😀 😄  😁 😅 \
+ 😂 😛  😃 😃 😅  😃 😃 😅  😃 😃 😃  😃 😃 😅  😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😃 😃 😄  😃 😃 😅\
+  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 \
+😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  🤣 😊  😁 😄  😃 😄 😁  😃 😀 😃  😃 😄 🤣  😁 😅  😅 😃  😃 😀  \
+😃 😀  😃 😀  😁 🤣  😁 😄  😂 😉  😃 😃 😅  😃 😀 😃  😛 😉  😃 😃 😂  😃 😀 😃  😁 😄  😛 😉  😁 \
+😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😁 😄  😃 😀 😄  😃 😃 😃  😃 😃 😅  😁\
+ 😄  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  \
+😃 😃 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 \
+😃  😛 😉  😃 😀 😀  😃 😀  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣\
+  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😁 😄  😂 😃  😁 😄  😃 😃 😂  😃 😀 😅 \
+ 😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀 🤣  😃 😃 😀  😃 😀 😁  😅 😂  😊 😅  😃 😀 😅  😃 😃 😅\
+  😃 😀 😃  😛 😉  😃 😀 😀  😅 😀  😃 😃 😂  😛 😉  😃 😃 😅  😃 😀 😁  😃 😀 😃  😃 😃 😂  😂 😃 \
+ 😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃\
+ 🤣  😃 😃 🤣  😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  \
+😛 😉  😃 😀 😀  😅 😃  😃 😀  😃 😀  😃 😀 🤣  😃 😀 😄  😁 😄  😛 🤣  😛 🤣  😃 😃 😀  😛 😉  😃 \
+😀 😛  😃 😀 😃  😛 🤣  😛 🤣  😁 😄  😂 😃  😂 😃  😁 😄  😁 😛  😛 🤣  😛 🤣  😃 😀 😛  😛 😉  😃\
+ 😀 🤣  😃 😃 😀  😛 🤣  😛 🤣  😁 😛  🤣 😊  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😊 \
+😁  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😃 😄  😃 😃\
+ 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😀 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  \
+😛 😉  😃 😀 😁  😃 😀 😃  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀 \
+ 😁 😄  😃 😀 🤣  😃 😃 😀  😁 😄  😛 😉  😃 😃 😀  😃 😃 😃  😃 😃 😂  😃 😀 😅  😃 😀 😃  😃 😃 😅\
+  😁 😄  😃 😃 😂  😃 😀 😅  😃 😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄\
+  😃 😃 😄  😃 😃 😅  😃 😃 😃  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😛 🤣  😃 😃 😂  😃 😀 😅  😃 \
+😃 😅  😃 😀 😃  😛 😉  😃 😀 😀  😅 😂  😃 😃 🤣  😃 😃 😂  😛 😉  😃 😃 😅  😃 😃 😂  😅 😀  😅 😃\
+  😃 😀  😃 😀  😁 😄  😁 😄  😁 😄  😁 😄  😁 🤣  😁 😄  😊 😄  😃 😃 😉  😃 😃 😀  😁 😄  😃 😃 \
+😂  😃 😀 😅  😃 😀 😃  😁 😄  😉 😀  😃 😀 😊  😛 😉  😃 😃 🤣  😃 😀 😉  😁 😄  😛 😉  😃 😃 😄  \
+😃 😃 😄  😁 😄  😃 😃 😛  😃 😀 🤣  😃 😃 😂  😃 😀 😅  😁 😄  😊 😁  😃 😃 😃  😛 😛  😃 😀 😉  😃\
+ 😀 😃  😃 😃 😂  😉 😁  😉 😛  😁 😄  😃 😃 🤣  😃 😃 😉  😃 😃 😄  😃 😃 😄  😃 😃 😃  😃 😃 😅  \
+😃 😃 😂  😅 😅  😁 😄  😛 😉  😃 😀 😊  😃 😀 😊  😃 😃 😃  😃 😃 😛  😃 😀 🤣  😃 😃 😀  😃 😀 😁 \
+ 😁 😄  😛 😉  😛 😛  😛 😛  😃 😀 😃  😃 😃 🤣  😃 😃 🤣  😁 😄  😃 😀 😄  😃 😃 😅  😃 😃 😃  😃 \
+😀 😛  😁 😄  😃 😃 😂  😃 😀 😅  😃 😀 😃  😁 😄  😃 😃 😛  😃 😀 😃  😛 😊  😃 😀  😁 😄  😁 😄  \
+😁 😄  😁 😄  😃 😃 🤣  😃 😃 😃  😛 😛  😃 😀 😉  😃 😀 😃  😃 😃 😂  😃 😀 🤣  😃 😃 😃  😅 😂  😃\
+ 😃 😅  😃 😃 😉  😃 😃 😀  😅 😀  😛 😉  😃 😃 😄  😃 😃 😄  😅 😅  😁 😄  😃 😀 😀  😃 😀 😃  😛 \
+😊  😃 😃 😉  😃 😀 😁  😂 😃  😊 😅  😃 😃 😅  😃 😃 😉  😃 😀 😃  😅 😅  😁 😄  😃 😀 😅  😃 😃 😃\
+  😃 😃 🤣  😃 😃 😂  😂 😃  😁 😛  😅 😊  😅 😂  😅 😊  😅 😂  😅 😊  😅 😂  😅 😊  😁 😛  😅 😅 \
+ 😁 😄  😃 😃 😄  😃 😃 😃  😃 😃 😅  😃 😃 😂  😂 😃  🤣 😁  😅 😊  😅 😊  😅 😊  😅 😅  😁 😄  😃\
+ 😃 😉  😃 😃 🤣  😃 😀 😃  😛 🤣  😃 😃 😅  😃 😀 😃  😃 😀 😊  😃 😃 😃  😛 😉  😃 😀 😀  😃 😀 😃\
+  😃 😃 😅  😂 😃  😉 😀  😛 😉  😃 😀 😊  😃 😃 🤣  😃 😀 😃  😅 😃  😃 😀  😁 😄  😁 😄  😁 😄  \
+😁 😄"
+.split("  ")])))
