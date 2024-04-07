@@ -5,3 +5,4 @@ Werkzeug==2.0.2
 Jinja2==3.0.3
 click==8.0.3
 cython==0.29.24
+Flask-Cors==3.0.10
