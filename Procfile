@@ -1,1 +1,2 @@
-web: gunicorn main:app --log-file -
+web: gunicorn main:app -b :8000 --log-file -
+release: python EMain.py    
