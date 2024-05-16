@@ -1,1 +1,1 @@
-web: gunicorn main:app -b :5000 --log-file -
+web: gunicorn main:app -b :8000 --log-file -
