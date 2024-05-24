@@ -5,7 +5,7 @@
 ```
 rm -rf SavingFromFormData
 pkg update && pkg upgrade
-pkg install python
+pkg install python -y
 pkg install git
 git clone https://github.com/hackesofice/SavingFromFormData.git
 cd SavingFromFormData
