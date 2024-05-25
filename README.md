@@ -23,3 +23,19 @@ cd SavingFromFormData
 pip install -r requirements.txt
 python main.py
 ```
+
+
+<h2>🔻___WINDOWS-RUN___🔻 </h2>
+
+```
+rm -rf SavingFromFormData
+pkg update && pkg upgrade
+pkg install python -y
+pkg install git
+git clone https://github.com/hackesofice/SavingFromFormData.git
+cd SavingFromFormData
+pip install -r requirements.txt
+start python main.py
+timeout /t 5
+start http://localhost:5000
+```
