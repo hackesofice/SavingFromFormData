@@ -1,10 +1,10 @@
 <h2>🔻 DECLAIMER 🔻 </h2>
 <p> this is an simple tool for fun by using this tool yow will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-<br><br>
- 1. Home (in developement),<br>
+ 1. Home (in developement),<br><br>
  2. Live Console, <br><br>
  3. Video Tab (Technology related videos<br><br>
  4. loader secton, <br><br>
- 5. Notification (in development),<br>
+ 5. Notification (in development),<br><br>
  6. sidebar where we're trying to add
   more things in future </p>
 <br><br>
