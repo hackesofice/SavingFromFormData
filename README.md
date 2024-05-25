@@ -21,7 +21,9 @@ pkg install git
 git clone https://github.com/hackesofice/SavingFromFormData.git
 cd SavingFromFormData
 pip install -r requirements.txt
-python main.py
+python main.py &
+sleep 65
+xdg-open http://localhost:5000
 ```
 
 
@@ -36,6 +38,6 @@ git clone https://github.com/hackesofice/SavingFromFormData.git
 cd SavingFromFormData
 pip install -r requirements.txt
 start python main.py
-timeout /t 5
+timeout /t 65
 start http://localhost:5000
 ```
