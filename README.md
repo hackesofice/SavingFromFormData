@@ -1,5 +1,5 @@
 <h2>🔻 DECLAIMER 🔻 </h2>
-<p> this is an simple tool for fun by using this tool yow will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-
+<p> this is an simple tool for fun by using this tool yow will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-<br>
  1. Home (in developement),
  2. Live Console, 
  3. Video Tab (Technology related videos
