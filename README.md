@@ -2,6 +2,10 @@
  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=794EF7&random=false&width=435&lines=FORK+THIS+REPOSITORY+AND+USE+(FREE))](https://git.io/typing-svg) 
 
 <h2>🔻 DECLAIMER 🔻 </h2>
+
+
+[![MR INDIAN HACKER](https://i.ibb.co/vDwL05C/1716780350498.jpg)](https://youtube.com/@mrindianhelper_hacer)
+
 <p style="color="blue"> this is an simple tool for fun by using this tool yow will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-<br><br>
  1. Home (in developement),<br><br>
  2. Live Console, <br><br>
@@ -11,7 +15,12 @@
  6. sidebar where we're trying to add
   more things in future </p>
 <br><br>
-<h2>🔻___TERMUX-RUN___🔻 </h2>
+
+
+<h2>       DEPLOYMENT OPTIONS</h2>
+<p>Yau are able to deploy this tool in many platefors like- <br>1. REPLIT <br>2. RENDER <br> 3. KOYEB <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
+
+**DEPLOY ON TERMUX**
 
 ```
 pkg install python -y
@@ -29,7 +38,7 @@ xdg-open http://localhost:5000
 ```
 
 
-<h2>🔻___WINDOWS-RUN___🔻 </h2>
+**DEPLOY ON PC**
 
 ```
 rm -rf SavingFromFormData
@@ -43,3 +52,4 @@ start python main.py
 timeout /t 65
 start http://localhost:5000
 ```
+
