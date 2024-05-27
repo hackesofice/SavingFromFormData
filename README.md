@@ -1,7 +1,7 @@
 
  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=794EF7&random=false&width=435&lines=FORK+THIS+REPOSITORY+AND+USE+(FREE))](https://git.io/typing-svg) 
 
-## DECLAIMER 
+## `DECLAIMER`
 
 
 [![MR INDIAN HACKER](https://i.ibb.co/vDwL05C/1716780350498.jpg)](https://youtube.com/@mrindianhelper_hacer)
