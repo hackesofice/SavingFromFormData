@@ -46,7 +46,7 @@
 
 **DEPLOY OPTION 1 (KOYEB)** <br>
 *Step 1* <br>
-[![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://www.koyeb.com/signup) <br>
+[![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
 
 *Step 2* <br>
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) <br>
