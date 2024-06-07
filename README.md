@@ -16,7 +16,7 @@
  4. loader secton, <br><br>
  5. Notification (in development),<br><br>
  6. sidebar where we're trying to add
-  more things in future </p>
+  more things in future <br> 7. MOST UNIQUE FEATURE IS DELETE (SUSPEND) ANY ACCOUNT AND LOCK GROUP NAME</p>
 <br><br>
 
 
