@@ -1,5 +1,4 @@
-
- [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=794EF7&random=false&width=435&lines=FORK+THIS+REPOSITORY+AND+USE+(FREE))](https://git.io/typing-svg) 
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=794EF7&random=false&width=435&lines=FORK+THIS+REPOSITORY+AND+USE+(FREE))](https://git.io/typing-svg) 
 
 ## `DECLAIMER`
 
@@ -50,7 +49,7 @@
 [![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://www.koyeb.com/signup)
 
 <br>
-*step 2* <br>
+*Step 1* <br>
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) <br>
 **DEPLOY ON TERMUX**
 
