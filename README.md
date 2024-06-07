@@ -45,7 +45,7 @@
 <p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. REPLIT <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
 
 
-**OPTION 1 (KOYEB)**
+**DEPLOY OPTION 1 (KOYEB)** <br>
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?...)
 
 **DEPLOY ON TERMUX**
