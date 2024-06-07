@@ -46,7 +46,7 @@
 
 
 **DEPLOY OPTION 1 (KOYEB)** <br>
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?...)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy)
 
 **DEPLOY ON TERMUX**
 
