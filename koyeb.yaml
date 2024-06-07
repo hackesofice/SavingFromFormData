@@ -1,0 +1,26 @@
+name: SavingFromFormData
+routes:
+  - name: web
+    type: http
+    port: 5000 
+
+services:
+  - name: SavingFromFormData-service
+    description: "Service for SavingFromFormData application"
+    image:
+      dockerfile: Dockerfile
+    env:
+      - name: dotenv
+        value: "name"
+      - name: HAKR
+        value: "value"
+    resources:
+      cpu: "free"
+    ports:
+      - port: 5000
+        protocol: TCP
+    routes:
+      - name: SavingFromFormData-route
+        path: "/*"
+        service: SavingFromFormData-service
+        
