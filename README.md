@@ -42,7 +42,11 @@
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
-<p>Yau are able to deploy this tool in many platefors like- <br>1. REPLIT <br>2. RENDER <br> 3. KOYEB <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
+<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. REPLIT <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
+
+
+**OPTION 1 (KOYEB)**
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?...)
 
 **DEPLOY ON TERMUX**
 
