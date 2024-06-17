@@ -65,9 +65,7 @@ rm -rf SavingFromFormData
 git clone https://github.com/hackesofice/SavingFromFormData.git
 cd SavingFromFormData
 pip install -r requirements.txt
-python main.py &
-sleep 65
-xdg-open http://localhost:5000
+python main.py
 ```
 
 
