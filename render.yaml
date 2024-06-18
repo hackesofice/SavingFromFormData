@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-flask-app
+    name: SavingFromFormData
     env: python
     plan: free
     branch: main
