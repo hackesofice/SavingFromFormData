@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: my-flask-app
+    env: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn main:app
+    envVars:
+      - key: dotenv
+        value: Hakr
+        
