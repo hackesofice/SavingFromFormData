@@ -1,5 +1,6 @@
 services:
   - type: web
+    blueprint: SavingFromFormData
     name: SavingFromFormData
     env: python
     plan: free
