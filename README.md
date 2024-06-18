@@ -52,6 +52,12 @@
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) 
 
 
+###**DEPLOY OPTION 2 (RENDER)**
+Click the button below to deploy to Render:
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/your-repo)
+
+## Gettin
 <br><br>
 **DEPLOY ON TERMUX**
 
