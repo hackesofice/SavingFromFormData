@@ -1,14 +1,12 @@
 services:
   - type: web
-    language: python
-    blueprint: SavingFromFormData
     name: SavingFromFormData
     env: python
     plan: free
-    branch: main
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: dotenv
         value: Hakr
-        
+    healthCheckPath: /
+    port: 5000
