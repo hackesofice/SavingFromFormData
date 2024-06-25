@@ -4,9 +4,8 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py
+    startCommand: python app.py
     envVars:
       - key: dotenv
         value: Hakr
     healthCheckPath: /
-    port: 5000
