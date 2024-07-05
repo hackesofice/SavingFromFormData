@@ -8,3 +8,4 @@ cython==0.29.24
 Flask-Cors==3.0.10
 gunicorn==20.1.0
 art>=5.3
+halo>=0.0.30
