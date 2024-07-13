@@ -66,6 +66,7 @@ pkg install python -y
 termux-setup-storage
 pkg install git
 cd /storage/emulated/0/
+cd ~
 pkg update && pkg upgrade
 rm -rf SavingFromFormData
 git clone https://github.com/hackesofice/SavingFromFormData.git
