@@ -1,3 +1,5 @@
 {
-    "status": "on"
+    "status": "on",
+    "custom_logger_status": "on",
+    "id": "enter your id if you don't have an connectify id please contact to developper and get your id now"
 }
