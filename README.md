@@ -41,7 +41,7 @@
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
-<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. REPLIT <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
+<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. railway <br> 4. REPLIT <br> 5. HEROKU <br>6. TERMUX <br>7. PC</p>
 
 
 **DEPLOY OPTION 1 (KOYEB)** <br>
@@ -56,6 +56,10 @@
 Click the button below to deploy to Render:
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/your-repo)
+
+###**DEPLOY OPTION 3 (RAILWAY)**
+Click the button below to deploy to RAILWAY:
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/hackesofice/SavingFromFormData)
 
 ## Gettin
 <br><br>
