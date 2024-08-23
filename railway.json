@@ -1,0 +1,30 @@
+{
+  "project": "SavingFromFormData",
+  "services": [
+    {
+      "name": "SavingFromFormData-service",
+      "type": "web",
+      "build": {
+        "dockerfilePath": "Dockerfile"
+      },
+      "envVars": {
+        "dotenv": "name",
+        "HAKR": "value"
+      },
+      "resources": {
+        "cpu": "free"
+      },
+      "ports": [
+        {
+          "port": 5000,
+          "protocol": "TCP"
+        }
+      ],
+      "routes": [
+        {
+          "path": "/*"
+        }
+      ]
+    }
+  ]
+}
