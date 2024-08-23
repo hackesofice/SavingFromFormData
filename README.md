@@ -27,8 +27,8 @@
 <a href="https://github.com/hackesofice/SavingFromFormData/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/hackesofice/SavingFromFormData?label=Watchers&color=blue&style=flat-square"></a>
 <a href="https://github.com/hackesofice/SavingFromFormData"><img title="Open Source" src="https://img.shields.io/badge/Author-MRINDIAN%20HACKER.-red?v=103"></a>
 <a href="https://github.com/hackesofice/SavingFromFormData/"><img title="Size" src="https://img.shields.io/github/repo-size/hackesofice/SavingFromFormData?style=flat-square&color=green"></a>
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhackesofice%2FSavingFromFormData%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>          
-<a href="https://github.com/hackesofice/SavingFromFormData/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
+<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fhackesofice%2FSavingFromFormData%2Fhit-counter&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+ <a href="https://github.com/hackesofice/SavingFromFormData/graphs/commit-activity"><img height="20" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"></a>&nbsp;&nbsp;
 </p>
 <p align='center'>
 </p>
@@ -41,7 +41,7 @@
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
-<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. REPLIT <br> 4. HEROKU <br>5. TERMUX <br>6. PC</p>
+<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. railway <br> 4. REPLIT <br> 5. HEROKU <br>6. TERMUX <br>7. PC</p>
 
 
 **DEPLOY OPTION 1 (KOYEB)** <br>
@@ -56,6 +56,10 @@
 Click the button below to deploy to Render:
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/offiicialkamal/SavingFromFormData.git)
+
+###**DEPLOY OPTION 3 (RAILWAY)**
+Click the button below to deploy to RAILWAY:
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/hackesofice/SavingFromFormData)
 
 ## Gettin
 <br><br>
