@@ -41,7 +41,32 @@
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
-<p>Yau are able to deploy this tool in many platefors like- <br>1. KOYEB <br>2. RENDER <br> 3. railway <br> 4. REPLIT <br> 5. HEROKU <br>6. TERMUX <br>7. PC</p>
+<p>Yau are able to deploy this tool in many platefors like- <br>
+ 1. KOYEB <br>
+ 2. RENDER <br> 
+ 3. railway <br> 
+ 4. REPLIT <br> 
+ 5. HEROKU <br>
+ 6. <details>
+      <summary> deploy on termux</summary>
+
+  **DEPLOY ON TERMUX**
+
+```
+pkg install python -y
+termux-setup-storage
+pkg install git
+cd /storage/emulated/0/
+cd ~
+pkg update && pkg upgrade
+rm -rf SavingFromFormData
+git clone https://github.com/hackesofice/SavingFromFormData.git
+cd SavingFromFormData
+pip install -r requirements.txt
+python main.py
+```
+ </details>
+ 7. PC</p>
 
 
 **DEPLOY OPTION 1 (KOYEB)** <br>
