@@ -8,14 +8,15 @@
 <p align="center">
 <a href="https://github.com/hackesofice"><img title="Author" src="https://img.shields.io/badge/CREATOR-HACKER-black.svg?style=for-the-badge&logo=github"></a>
  
-<p style="color="blue"> this is an simple tool for fun by using this tool yow will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-<br><br>
+<p style="color="blue"> this is an simple tool for fun by using this tool you will be able to send messages, post comments continuously (nonstop) don't try to use it for taking revenge otherwise developer isn't responsible for any type of controversys, this tool contains a webview where you can see many options like-<br><br>
  1. Home (in developement),<br><br>
  2. Live Console, <br><br>
  3. Video Tab (Technology related videos<br><br>
- 4. loader secton, <br><br>
- 5. Notification (in development),<br><br>
+ 4. loader Tab, <br><br>
+ 5. Notification Tab(in development),<br><br>
  6. sidebar where we're trying to add
-  more things in future <br> 7. MOST UNIQUE FEATURE IS DELETE (SUSPEND) ANY ACCOUNT AND LOCK GROUP NAME</p>
+    more things in future <br><br>
+ 7. MOST UNIQUE FEATURE IS DELETE (SUSPEND) ANY ACCOUNT AND LOCK GROUP NAME</p>
 <br><br>
 
 
@@ -41,54 +42,87 @@
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
-<p>Yau are able to deploy this tool in many platefors like- <br>
- 1. KOYEB <br>
- 2. RENDER <br> 
- 3. railway <br> 
- 4. REPLIT <br> 
- 5. HEROKU <br>
- 6. <details>
-      <summary> deploy on termux</summary>
-
-  **DEPLOY ON TERMUX**
-
-```
-pkg install python -y
-termux-setup-storage
-pkg install git
-cd /storage/emulated/0/
-cd ~
-pkg update && pkg upgrade
-rm -rf SavingFromFormData
-git clone https://github.com/hackesofice/SavingFromFormData.git
-cd SavingFromFormData
-pip install -r requirements.txt
-python main.py
-```
- </details>
- 7. PC</p>
+<p>This tool is desined for simple and single click deployments on several plateforms. i mentioned some plateforms, some of these provides free instance and don't need to add any payment methods like cards or some thing </br>
+## click bellow for deployment steps- ## 
+<br>
+ 
 
 
-**DEPLOY OPTION 1 (KOYEB)** <br>
-*Step 1* <br>
-[![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
+<ol>
+<li>
+<details>
+  <summary>koyeb</summary>
+  <div> 
+            **DEPLOY OPTION 1 (KOYEB)** <br>
+             *Step 1* <br>
+             
+             [![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
 
-*Step 2* <br>
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) 
+            *Step 2* <br>
+            
+            [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) 
+  </div>
+</details>
+</li> </br>
 
 
-###**DEPLOY OPTION 2 (RENDER)**
+
+<li>
+<details>
+  <summary>render</summary>
+  <p>
+   ###**DEPLOY OPTION 2 (RENDER)**
 Click the button below to deploy to Render:
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/offiicialkamal/SavingFromFormData.git)
+ </p>
+</details>
+</li></br>
 
-###**DEPLOY OPTION 3 (RAILWAY)**
+
+
+<li>
+<details>
+  <summary>heroku</summary>
+  <p>
+    ipsum
+  lor
+  dolorLorem
+    dolorLorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam expedita, natus commodi vero saepe adipisci omnis, ducimus nam quos. Ea sit officiis maxime similique cum velit ad provident alias est.
+  </p>
+</details>
+</li></br>
+
+
+<li>
+<details>
+  <summary>railway</summary>
+  <p>
+  ###**DEPLOY OPTION 3 (RAILWAY)**  </p>
 Click the button below to deploy to RAILWAY:
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/hackesofice/SavingFromFormData)
+</details>
+</li></br>
 
-## Gettin
-<br><br>
-**DEPLOY ON TERMUX**
+
+
+
+
+<li>
+<details>
+  <summary>Replit</summary>
+  <p>**DEPLOY ON PC**  </p>
+</details>
+</li></br>
+
+
+
+
+<li>
+<details>
+  <summary>Termux</summary>
+  <p>
+      **DEPLOY ON TERMUX**
 
 ```
 pkg install python -y
@@ -103,20 +137,30 @@ cd SavingFromFormData
 pip install -r requirements.txt
 python main.py
 ```
+  </p>
+</details>
+</li></br>
 
 
-**DEPLOY ON PC**
 
-```
-rm -rf SavingFromFormData
-pkg update && pkg upgrade
-pkg install python -y
-pkg install git
-git clone https://github.com/hackesofice/SavingFromFormData.git
-cd SavingFromFormData
-pip install -r requirements.txt
-start python main.py
-timeout /t 65
-start http://localhost:5000
-```
+<li>
+<details>
+  <summary>PC</summary>
+  <p>**DEPLOY ON PC**  </p>
 
+  ```
+    rm -rf SavingFromFormData
+    pkg update && pkg upgrade
+    pkg install python -y
+    pkg install git
+    git clone https://github.com/hackesofice/SavingFromFormData.git
+    cd SavingFromFormData
+    pip install -r requirements.txt
+    start python main.py
+    timeout /t 65
+    start http://localhost:5000
+  ```
+</details>
+</li></br>
+
+</ol>
