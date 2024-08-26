@@ -1,0 +1,20 @@
+[project]
+name = "SavingFromFormData"
+
+[[services]]
+name = "SavingFromFormData-service"
+type = "web"
+build = "."
+envVars = [
+  name = "value",
+  HAKR = "value"
+]
+resources = {
+  cpu = "free"
+}
+ports = [
+  { port = 5000, protocol = "TCP" }
+]
+routes = [
+  { path = "/*" }
+]
