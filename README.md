@@ -67,11 +67,13 @@
             **DEPLOY OPTION 1 (KOYEB)** <br>
              *Step 1* <br>
              <p> First of all you need an koyeb account of you don't have click the button Bellow and singn up to koyeb make sure you will create an account using your origin gmail, using tempmail is not allowed in koyeb otherwise your account will be suspended on runtime </p>
-             [![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
+             
+   [![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
 
             *Step 2* <br>
             
-            [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) 
+ [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://connectify-beige.vercel.app/) 
+ 
   </div>
 </details>
 </li> </br>
@@ -86,6 +88,7 @@
 Click the button below to deploy to Render:
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/offiicialkamal/SavingFromFormData.git)
+
  </p>
 </details>
 </li></br>
@@ -111,7 +114,9 @@ Click the button below to deploy to Render:
   <p>
   ###**DEPLOY OPTION 3 (RAILWAY)**  </p>
 Click the button below to deploy to RAILWAY:
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/hackesofice/SavingFromFormData)
+
+ [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/hackesofice/SavingFromFormData)
+
 </details>
 </li></br>
 
