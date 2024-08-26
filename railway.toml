@@ -6,8 +6,7 @@ name = "SavingFromFormData-service"
 type = "web"
 build = "."
 envVars = [
-  name = "value",
-  HAKR = "value"
+  dotenv = "hakr",
 ]
 resources = {
   cpu = "free"
