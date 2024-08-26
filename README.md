@@ -37,13 +37,24 @@
 
 
 ## `Installation Steps`
+**STEP 0 ==> Click on the star you'r seeing upper right corner, its not an deployment step, its appritiation for thr developer to keep adding new features.**
+</br>
+</br>
+**STEP 1 ==> Click Bellow**
+<br>
+<br>
 
-**STEP 1 ==> Click Bellow**<br>
 <a href='https://github.com/hackesofice/SavingFromFormData/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=sky-blue'></a> 
 
+</br>
+</br>
+
 **STEP 2 ==> CHOOSE DEPLOYMENT OPTION**
+
 <p>This tool is desined for simple and single click deployments on several plateforms. i mentioned some plateforms, some of these provides free instance and don't need to add any payment methods like cards or some thing </br>
-## click bellow for deployment steps- ## 
+
+## Choose and click the option to see details ## 
+
 <br>
  
 
@@ -55,7 +66,7 @@
   <div> 
             **DEPLOY OPTION 1 (KOYEB)** <br>
              *Step 1* <br>
-             
+             <p> First of all you need an koyeb account of you don't have click the button Bellow and singn up to koyeb make sure you will create an account using your origin gmail, using tempmail is not allowed in koyeb otherwise your account will be suspended on runtime </p>
              [![Sign Up to Koyeb](https://via.placeholder.com/150x50.png?text=Sign+Up+to+Koyeb)](https://app.koyeb.com/auth/signup) <br>
 
             *Step 2* <br>
