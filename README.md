@@ -15,20 +15,19 @@
  <p> ====>> All features are explained below click on specific part which you wanna explore :-</p><br><br>
  
  <ol>
-   <li><details><summary>Home (in developement),   </li></details></summary><br><br>
-   <li><details><summary>Live Console, </li></details></summary><br><br>
-   <li><details><summary>Video Tab (Technology related videos </li></details></summary><br><br>
-   <li><details><summary>loader Tab, </li></details></summary><br><br>
-   <li><details><summary>Notification Tab(in development),</li></details></summary><br><br>
-   <li><details><summary>sidebar where we're trying to add more things in future </li></details></summary><br><br>
-   <li><details><summary>Suspend any fb acc in 5 seconds</li></details></summary> <br><br>
-   <li><details><summary>Lock group name (now fully functional) 🔥</li></details></summary><br><br>
+   <li><details><summary>Home (in developement)   </li></details></summary><br>
+   <li><details><summary>Live Console </li></details></summary><br>
+   <li><details><summary>Video Tab (Technology related videos </li></details></summary><br>
+   <li><details><summary>loader Tab </li></details></summary><br>
+   <li><details><summary>Notification Tab(in development)</li></details></summary><br>
+   <li><details><summary>There's much intresting features</li></details></summary><br>
+   <li><details><summary>Suspend any fb acc in 5 seconds</li></details></summary> <br>
+   <li><details><summary>Lock group name (now fully functional) 🔥</li></details></summary><br>
    <p> click ☝️ to get more details about any features </p>
-<br><br
+<br><br>
 </ol>
 
-
-📊 **TOOL INFO**
+📊 **TOOL INFO** <br>
 <p align="center">
 <a href="https://github.com/hackesofice/followers"><img title="Followers" src="https://img.shields.io/github/followers/hackesofice?color=red&style=flat-square"></a>
 <a href="https://github.com/hackesofice/SavingFromFormData/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/hackesofice/SavingFromFormData?color=blue&style=flat-square"></a>
@@ -48,7 +47,7 @@
 **STEP 0 ==> Click on the star you'r seeing upper right corner, its not an deployment step, its appritiation for thr developer to keep adding new features.**
 </br>
 </br>
-**STEP 1 ==> Click FORK BUTTON Bellow**ih
+**STEP 1 ==> Click FORK BUTTON Bellow** <br>
    Fork this repository with the same name ( SavingFromFormData ) do not change the name otherwise you'll face some dificuilties in deployment
 <br>
 <br>
