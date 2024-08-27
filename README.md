@@ -149,7 +149,10 @@ Click the button below to deploy to Render:
 <li>
 <details>
   <summary>Replit (card needed to run nonstop)</summary>
-  <p>**DEPLOY ON PC**  </p>
+  <p>**DEPLOY ON REPLIT**  </p>
+  
+  [![Run on Replit](https://replit.com/badge/github/hackesofice/SavingFromFormData)](https://replit.com/new/github/hackesofice/SavingFromFormData?ref=button)
+  
 </details>
 </li></br>
 
