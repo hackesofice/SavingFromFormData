@@ -5,8 +5,8 @@ services:
     plan: free
     branch: main
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn main:app
+    startCommand: python main.py
     envVars:
       - key: dotenv
         value: Hakr
-        
+    healthCheckPath: /
