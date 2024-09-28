@@ -4,6 +4,7 @@ THE ALL FILES IN THIS FOLDER ARE NOW USELESS AND NOT GONNA WORK (EXEPT LogoName.
 ## changing the logo
 
 open and edit the LogoName.text replace 
+
  '''
  HAKR
  '''
