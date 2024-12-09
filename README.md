@@ -231,7 +231,7 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
    - navigate to your server pannel
 
 3. **Upload Your Bot Files**:
-   - if you are pro then manually download the zip, upload, unarchive move or follow the next step 
+   - if you are pro then manually download the zip, upload, unarchive move otherwise follow the next step 
    - Click on files tab 
    - click on Create file or New File
    - copy this and paste the text on that file
@@ -271,34 +271,14 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
     - congratulations your server is ready to install press the start button wait for automatically Stop, run again and now your server is gonna start bye bye 😛🤞
 
 4. **Set Startup Commands**:
-   - Go to the "Startup" tab in your server settings.
-   - Specify the startup command, such as:
-     - For Python: `python bot.py`
-     - For Node.js: `node bot.js`
+   - don't do anything you have allready done all things 
 
 5. **Install Dependencies**:
-   - Open the terminal in your Bot-Hosting.net dashboard.
-   - Install dependencies (e.g., `pip install -r requirements.txt` or `npm install`).
+   - just start the bot and everything will be automatically seted up for you.
 
 6. **Start Your Bot**:
    - Go to the "Console" tab and click "Start."
    - Your bot should now be online!
-
----
-
-#### 3. **Streamline with Webhook or API**
-If Bot-Hosting.net exposes APIs for automation:
-- Write a script to upload files, configure settings, and start the bot using API calls.
-- Share this script with users to automate deployment.
-
----
-
-### Example Scripts for Bot Deployment (Optional)
-If Bot-Hosting.net supports automation via scripts or APIs, you could create a tool to:
-1. Upload bot files using SFTP.
-2. Configure settings automatically.
-3. Start the bot from a script.
-
 
  </details>
 </li>
