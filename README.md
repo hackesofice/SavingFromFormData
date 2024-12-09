@@ -260,7 +260,7 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
                      shutil.move(source, destination)
                  else:
                      shutil.move(source, destination_path)
-                  except Exception as e:
+             except Exception as e:
                  print(f"Error moving {item}: {e}")
          shutil.rmtree(repo_name)
      settings_file_path = os.path.join(destination, 'settings.json')
