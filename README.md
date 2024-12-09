@@ -280,8 +280,7 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
     - now click on console
     - congratulations your server is ready to install press the start button wait for automatically Stop
     - now again go to files tab
-    - edit the settings.json file with your Connectify email and password
-    - turn off the CustomLoggerStatus from settings.json
+    - edit the settings.json file with your Connectify email and Password 
     - now start again and now your server is gonna start bye bye 😛🤞
 
 4. **Set Startup Commands**:
