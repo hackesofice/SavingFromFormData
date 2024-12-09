@@ -267,6 +267,7 @@ if os.path.exists(repo_name):
 
     shutil.rmtree(repo_name)
     print(f"Deleted the cloned repository folder: {repo_name}")
+    ```
     
     - ckick on create file
     - put the file name ( bot.py )
