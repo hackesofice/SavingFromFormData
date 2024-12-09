@@ -215,7 +215,7 @@ your server will start shortly you can only wait until automatically chrome isn'
 
 <li>
  <details>
-  <summary> Deploy on BotHosting.net</summary>
+  <summary> Deploy on BotHosting.net (free and paid both ) </summary>
 
 
   # Deploy Your Bot to Bot-Hosting.net
