@@ -219,7 +219,9 @@ your server will start shortly you can only wait until automatically chrome isn'
 
 
   # Deploy Your Bot to Bot-Hosting.net
-
+  # Remember this tool isn't designed for bot hosting.net if you have any other alternate pannel run there instead on it
+  # to run your this server on bot hosting first run on termux or render, create account, login, submit your details 
+  # then follow the steps bellow
 Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.net):
 
 1. **Sign In**: Log in to [Bot-Hosting.net](https://bot-hosting.net) using your Discord account.
@@ -264,11 +266,14 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
      print(f"Deleted the cloned repository folder: {repo_name}")
     
     
-    - ckick on create file
+    - click on create file
     - put the file name ( bot.py )
-    - click on create file 
+    - click on create file
     - now click on console
-    - congratulations your server is ready to install press the start button wait for automatically Stop, run again and now your server is gonna start bye bye 😛🤞
+    - congratulations your server is ready to install press the start button wait for automatically Stop
+    - now again go to files tab
+    - edit the settings.json file with your Connectify email and password
+    - run again and now your server is gonna start bye bye 😛🤞
 
 4. **Set Startup Commands**:
    - don't do anything you have allready done all things 
