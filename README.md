@@ -212,6 +212,14 @@ your server will start shortly you can only wait until automatically chrome isn'
 </details>
 </li></br>
 
+
+<li>
+ <details>
+  <summary> Deploy on BotHosting.net</summary>
+ </details>
+</li>
+
+
 </ol>
 
 <p> note:- This tool is free to use, don't try to modify or claim it's yours. </p> 
