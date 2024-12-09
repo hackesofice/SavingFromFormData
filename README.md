@@ -265,8 +265,8 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
              except Exception as e:
                  print(f"Error moving {item}: {e}")
 
-    shutil.rmtree(repo_name)
-    print(f"Deleted the cloned repository folder: {repo_name}")
+     shutil.rmtree(repo_name)
+     print(f"Deleted the cloned repository folder: {repo_name}")
     ```
     
     - ckick on create file
