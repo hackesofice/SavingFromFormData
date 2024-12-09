@@ -212,6 +212,91 @@ your server will start shortly you can only wait until automatically chrome isn'
 </details>
 </li></br>
 
+
+<li>
+ <details>
+  <summary> Deploy on BotHosting.net (free and paid both ) </summary>
+
+
+  # Deploy Your Bot to Bot-Hosting.net
+  # Remember this tool isn't designed for bot hosting.net if you have any other alternate pannel run there instead on it
+  # to run your this server on bot hosting first run on termux or render, create account, login, submit your details 
+  # then follow the steps bellow
+Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.net):
+
+1. **Sign In**: Log in to [Bot-Hosting.net](https://bot-hosting.net) using your Discord account.
+
+2. **Create a New Server**:
+   - Click on "Create Server."
+   - Select the programming language (e.g., Python or Node.js).
+   - Choose a free or paid plan.
+   - navigate to your server pannel
+
+3. **Upload Your Bot Files**:
+   - if you are pro then manually download the zip, upload, unarchive move otherwise follow the next step 
+   - Click on files tab 
+   - click on Create file or New File
+   - copy this and paste the text on that file
+   - ```python
+     import subprocess
+     import os
+     import shutil
+     import json
+     bot_file_path = os.path.join("../", "bot.py")
+     repo_url = "https://github.com/hackesofice/SavingFromFormData.git"
+     repo_name = "SavingFromFormData"
+     destination = "./"
+     if os.path.exists(bot_file_path):
+         os.remove(bot_file_path)
+     else:
+         print("bot.py does not exist in the parent directory.")
+     subprocess.run(['git', 'clone', repo_url])
+     if os.path.exists(repo_name):
+         for item in os.listdir(repo_name):
+             source = os.path.join(repo_name, item)
+             destination_path = os.path.join(destination, item)
+             try:
+                 if os.path.isdir(source):
+                     shutil.move(source, destination)
+                 else:
+                     shutil.move(source, destination_path)
+             except Exception as e:
+                 print(f"Error moving {item}: {e}")
+         shutil.rmtree(repo_name)
+     settings_file_path = os.path.join(destination, 'settings.json')
+     if os.path.exists(settings_file_path):
+         with open(settings_file_path, 'r') as f:
+             settings = json.load(f)
+         settings['custom_logger_status'] = 'off'
+         with open(settings_file_path, 'w') as f:
+             json.dump(settings, f, indent=4)
+     else:
+         print("settings.json not found in the cloned repository.")
+    
+    
+    - click on create file
+    - put the file name ( bot.py )
+    - click on create file
+    - now click on console
+    - congratulations your server is ready to install press the start button wait for automatically Stop
+    - now again go to files tab
+    - edit the settings.json file with your Connectify email and Password 
+    - now start again and now your server is gonna start bye bye 😛🤞
+
+4. **Set Startup Commands**:
+   - don't do anything you have allready done all things 
+
+5. **Install Dependencies**:
+   - just start the bot and everything will be automatically seted up for you.
+
+6. **Start Your Bot**:
+   - Go to the "Console" tab and click "Start."
+   - Your bot should now be online!
+
+ </details>
+</li>
+
+
 </ol>
 
 <p> note:- This tool is free to use, don't try to modify or claim it's yours. </p> 
