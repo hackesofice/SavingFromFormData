@@ -1,7 +1,4 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=794EF7&random=false&width=435&lines=FORK+THIS+REPOSITORY+AND+USE+(FREE))](https://git.io/typing-svg) 
-
-
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+code&weight=700&duration=2000&pause=500&center=true&vCenter=true&width=435&lines=FORK+THE+REPOSITORY+AND+USE+IT+FREE;DON'T+FORGET+TO+STAR+%E2%AD%90+THE+REPO;MAKE+SURE++YOU+FOLLOW+US+)](https://git.io/typing-svg)
 
 [![MR INDIAN HACKER](https://i.ibb.co/vDwL05C/1716780350498.jpg)](https://youtube.com/@mrindianhelper_hacer)
 
