@@ -295,6 +295,6 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
 
 
 </ol>
+> note:- This tool is free to use, don't try to modify or claim it's yours.
 
-<p> note:- This tool is free to use, don't try to modify or claim it's yours. </p> 
  <p style="padding: 4%; color: rgba(333,0,33,0.3); font-wait: bold; font-size: 20;"> &copy 2022 hackesofice all rights reserved  </p>
