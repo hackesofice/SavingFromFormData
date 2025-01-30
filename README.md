@@ -269,8 +269,10 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
              json.dump(settings, f, indent=4)
      else:
          print("settings.json not found in the cloned repository.")
+     ```
     
     
+   
     - click on create file
     - put the file name ( bot.py )
     - click on create file
@@ -280,13 +282,13 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
     - edit the settings.json file with your Connectify email and Password 
     - now start again and now your server is gonna start bye bye 😛🤞
 
-4. **Set Startup Commands**:
+5. **Set Startup Commands**:
    - don't do anything you have allready done all things 
 
-5. **Install Dependencies**:
+6. **Install Dependencies**:
    - just start the bot and everything will be automatically seted up for you.
 
-6. **Start Your Bot**:
+7. **Start Your Bot**:
    - Go to the "Console" tab and click "Start."
    - Your bot should now be online!
 
@@ -295,6 +297,8 @@ Follow these steps to deploy your bot to [Bot-Hosting.net](https://bot-hosting.n
 
 
 </ol>
-> note:- This tool is free to use, don't try to modify or claim it's yours.
 
- <p style="padding: 4%; color: rgba(333,0,33,0.3); font-wait: bold; font-size: 20;"> &copy 2022 hackesofice all rights reserved  </p>
+
+> Note:- This tool is free to use, don't try to modify or claim it's yours.
+
+<p style="padding: 4%; color: rgba(333,0,33,0.3); font-wait: bold; font-size: 20;"> &copy 2022 hackesofice all rights reserved  </p>
