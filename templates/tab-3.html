@@ -1,0 +1,67 @@
+<div class="content" id="content3">
+          <div id="videoContainer"></div>
+</div>
+
+<script>
+
+
+let videoURLs = [];                                                                                                                                     let loading = false;
+let loadedIndices = [];
+const videoQuality = 'small';
+async function fetchVideoURLs() {
+    if (loading) return;
+    loading = true;                                                                                                                                         const response = await fetch('https://raw.githubusercontent.com/hackesofice/Z/refs/heads/main/Url.txt');
+    const data = await response.text();
+    videoURLs = data.split('\n').map(url => {
+        if (url.trim() !== '') {
+            const videoID = url.match(/(?:\/|v=)([a-zA-Z0-9_-]{11})/)[1];
+            return `https://www.youtube.com/embed/${videoID}?vq=${videoQuality}`;
+        }
+    }).filter(Boolean); // Remove any falsy values
+    loading = false;
+}
+function fetchAndAppendVideos() {
+    const videoContainer = document.getElementById('videoContainer');
+    const videosToLoad = 3;
+    const newIndices = [];
+    for (let i = 0; i < videosToLoad; i++) {
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * videoURLs.length);
+        } while (loadedIndices.includes(randomIndex) || newIndices.includes(randomIndex)); // Ensure no repetition
+
+        newIndices.push(randomIndex);
+        const randomVideoURL = videoURLs[randomIndex];
+        const iframe = document.createElement('iframe');
+        iframe.classList.add('iframe');
+        iframe.src = randomVideoURL;
+        iframe.title = 'YouTube video player';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        iframe.allowfullscreen = true;
+        videoContainer.appendChild(iframe);
+    }
+    loadedIndices = [...loadedIndices, ...newIndices];
+    // filter repeate
+    if (loadedIndices.length > 6) {
+        loadedIndices = loadedIndices.slice(-6);
+    }
+}
+function handleScroll() {
+    const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+    if (scrollTop + clientHeight >= scrollHeight - 5) {
+        fetchAndAppendVideos();
+    }
+}
+window.addEventListener('scroll', handleScroll);
+fetchVideoURLs().then(fetchAndAppendVideos);
+
+
+</script>
+
+
+
+
+
+
+
+

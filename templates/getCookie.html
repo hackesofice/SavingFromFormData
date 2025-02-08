@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        /* Reset default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Facebook blue color */
+        :root {
+            --facebook-blue: #1877f2;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            width: 400px;
+            max-width: 90%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .form-container {
+            padding: 20px 30px;
+            border-top: 1px solid #dddfe2;
+        }
+
+        .form-container h1 {
+            color: var(--facebook-blue);
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--facebook-blue);
+            border: none;
+            border-radius: 6px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #165bbd;
+        }
+
+        .response-container {
+            margin-top: 20px;
+        }
+
+        .response-container .token,
+        .response-container .error {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .response-container .token h2,
+        .response-container .error h2 {
+            color: var(--facebook-blue);
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .response-container pre {
+            background-color: #f0f2f5;
+            padding: 10px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+        </div>
+        <div class="form-container">
+            <h1>Log into Facebook</h1>
+
+            <form id="loginForm">
+                <label for="username">Email or Phone:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <button type="submit">Log In And Get Token</button>
+            </form>
+        </div>
+
+        <div id="response" class="response-container">
+            <!-- Token or error messages will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            fetch('/get_token', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ username, password })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const responseDiv = document.getElementById('response');
+                responseDiv.innerHTML = '';
+
+                if (data.token) {
+                    const tokenElement = document.createElement('div');
+                    tokenElement.className = 'token';
+                    tokenElement.innerHTML = `<h2>Token retrieved:</h2><pre>${data.token}</pre>`;
+                    responseDiv.appendChild(tokenElement);
+                } else if (data.error) {
+                    const errorElement = document.createElement('div');
+                    errorElement.className = 'error';
+                    errorElement.innerHTML = `<h2>Error:</h2><p>${data.error}</p>`;
+                    responseDiv.appendChild(errorElement);
+                }
+            })
+            .catch(error => {
+                const responseDiv = document.getElementById('response');
+                responseDiv.innerHTML = `<div class="error"><h2>Error:</h2><p>${error.message}</p></div>`;
+            });
+        });
+    </script>
+</body>
+</html>
