@@ -1,1 +1,39 @@
-function _0x58d1(_0x28210f,_0x381526){const _0x5c048e=_0x5c04();return _0x58d1=function(_0x58d175,_0x450d4e){_0x58d175=_0x58d175-0x1e5;let _0x563405=_0x5c048e[_0x58d175];return _0x563405;},_0x58d1(_0x28210f,_0x381526);}(function(_0x20ef1a,_0x3a5574){const _0x3aa36f=_0x58d1,_0x4b820b=_0x20ef1a();while(!![]){try{const _0x351e4c=parseInt(_0x3aa36f(0x1f5))/0x1*(-parseInt(_0x3aa36f(0x1ec))/0x2)+-parseInt(_0x3aa36f(0x1e5))/0x3*(-parseInt(_0x3aa36f(0x1e8))/0x4)+parseInt(_0x3aa36f(0x1ed))/0x5+-parseInt(_0x3aa36f(0x1f1))/0x6*(-parseInt(_0x3aa36f(0x1f2))/0x7)+-parseInt(_0x3aa36f(0x1f4))/0x8+parseInt(_0x3aa36f(0x1ef))/0x9*(-parseInt(_0x3aa36f(0x1ea))/0xa)+parseInt(_0x3aa36f(0x1f0))/0xb*(parseInt(_0x3aa36f(0x1e6))/0xc);if(_0x351e4c===_0x3a5574)break;else _0x4b820b['push'](_0x4b820b['shift']());}catch(_0x57aada){_0x4b820b['push'](_0x4b820b['shift']());}}}(_0x5c04,0x9c477));function _0x5c04(){const _0x82664f=['7044Fgrdyk','102168bXrHJO','WebSocket\x20Connected','164hPyHvc','connect','1740710ouIwdz','WebSocket\x20Disconnected','2pFPwrN','356780seKIuN','getElementById','45ITDjtY','2486ZjOcsp','264zEeGEw','1932tDCibb','port','811760Penwco','491988zBTvyU','scrollHeight','disconnect','innerHTML','log','consoleOutput','<br/><br/>','getTime'];_0x5c04=function(){return _0x82664f;};return _0x5c04();}function showConsole(){const _0x4ae2ad=_0x58d1,_0x1c52be=document[_0x4ae2ad(0x1ee)](_0x4ae2ad(0x1fa));let _0x3fe4bd=0x0;function _0xa10158(_0x56c1da){const _0x3c15b3=_0x4ae2ad,_0x2c57c0=new Date()[_0x3c15b3(0x1fc)](),_0x36b201=_0x2c57c0-_0x3fe4bd;_0x36b201>0x2bc&&(_0x1c52be[_0x3c15b3(0x1f8)]+=_0x3c15b3(0x1fb)),_0x1c52be[_0x3c15b3(0x1f8)]+=_0x56c1da,_0x3fe4bd=_0x2c57c0,_0x1c52be['scrollTop']=_0x1c52be[_0x3c15b3(0x1f6)];}const _0x401777=io[_0x4ae2ad(0x1e9)]('http://'+document['domain']+':'+location[_0x4ae2ad(0x1f3)]);_0x401777['on']('console_output',function(_0x45bb76){_0xa10158(_0x45bb76);}),_0x401777['on'](_0x4ae2ad(0x1e9),function(){const _0x230e3e=_0x4ae2ad;console[_0x230e3e(0x1f9)](_0x230e3e(0x1e7));}),_0x401777['on'](_0x4ae2ad(0x1f7),function(){const _0xa6d541=_0x4ae2ad;console[_0xa6d541(0x1f9)](_0xa6d541(0x1eb));});}showConsole();
+function showConsole() {
+    const consoleElement = document.getElementById('consoleOutput');
+    let lastPacketTime = 0; // Track the time of the last packet
+
+    function updateConsole(content) {
+        const currentTime = new Date().getTime();
+        const timeDiff = currentTime - lastPacketTime;
+
+        if (timeDiff > 700) {
+            consoleElement.innerHTML += '<br/><br/>';
+        }
+
+        consoleElement.innerHTML += content;
+        lastPacketTime = currentTime;
+        consoleElement.scrollTop = consoleElement.scrollHeight; // Auto scroll to the bottom
+    }
+
+    // Setup WebSocket connection
+    const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    const protocol = isLocalhost ? 'http' : 'https';
+    const domain = isLocalhost ? 'localhost' : document.domain;
+    const port = location.port ? ':' + location.port : '';
+
+    const socket = io.connect(`${protocol}://${domain}${port}`);
+
+    socket.on('console_output', function (data) {
+        updateConsole(data);
+    });
+
+    socket.on('connect', function () {
+        console.log('WebSocket Connected');
+    });
+
+    socket.on('disconnect', function () {
+        console.log('WebSocket Disconnected');
+    });
+}
+
+showConsole();
