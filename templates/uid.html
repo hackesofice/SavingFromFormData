@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook UID and Name Extractor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            text-align: center;
+            padding: 50px;
+            animation: backgroundAnimation 10s infinite alternate;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        @keyframes backgroundAnimation {
+            from { background: linear-gradient(to right, #4facfe, #00f2fe); }
+            to { background: linear-gradient(to right, #ff758c, #ff7eb3); }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        form {
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        input[type="submit"] {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            background: #00f2fe;
+            color: #fff;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #4facfe;
+        }
+
+        .result, .error {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .copy-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: #4facfe;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background: #00f2fe;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #ddd;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .floating-logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        .interactive-video {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .description {
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            form, .result, .error, .description, .interactive-video {
+                width: 90%;
+            }
+        }
+
+        .animated-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .animated-bg span {
+            position: absolute;
+            display: block;
+            width: 25px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.15);
+            animation: move 20s linear infinite;
+        }
+
+        @keyframes move {
+            0% { transform: translateY(0) rotate(0); }
+            100% { transform: translateY(-100vh) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-bg">
+        <span style="left: 5%; animation-delay: 0s;"></span>
+        <span style="left: 15%; animation-delay: 2s;"></span>
+        <span style="left: 25%; animation-delay: 4s;"></span>
+        <span style="left: 35%; animation-delay: 6s;"></span>
+        <span style="left: 45%; animation-delay: 8s;"></span>
+        <span style="left: 55%; animation-delay: 10s;"></span>
+        <span style="left: 65%; animation-delay: 12s;"></span>
+        <span style="left: 75%; animation-delay: 14s;"></span>
+        <span style="left: 85%; animation-delay: 16s;"></span>
+        <span style="left: 95%; animation-delay: 18s;"></span>
+    </div>
+
+    <h1>Facebook UID and Name Extractor</h1>
+    <form id="extract-form">
+        <label for="url">Enter the URL of the Facebook page in mobile view:</label><br>
+        <input type="text" id="url" name="url" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="results-container">
+        <!-- Results or error messages will be injected here dynamically -->
+    </div>
+
+    <div class="description">
+        <h2>About this Tool</h2>
+        <p>This tool allows you to extract the UID and name from a Facebook page URL in mobile view. Simply enter the URL, and you'll receive the relevant details.</p>
+    </div>
+
+    <div class="interactive-video">
+        <h2>How to Use</h2>
+        <video width="100%" controls>
+            <source src="tutorial.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Facebook UID and Name Extractor. All rights reserved.</p>
+    </footer>
+
+    <img src="logo.png" alt="Logo" class="floating-logo">
+
+    <script>
+        document.getElementById('extract-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const url = document.getElementById('url').value;
+
+            console.log('Submitting URL:', url); // Debugging line
+
+            fetch('/getUid', { // Update endpoint to /getUid
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ url: url })
+            })
+            .then(response => response.text()) // Read the response as text first
+            .then(text => {
+                try {
+                    const json = JSON.parse(text); // Try to parse the text as JSON
+                    console.log('Parsed JSON:', json); // Debugging line
+
+                    if (json.uid && json.description) {
+                        const resultsContainer = document.getElementById('results-container');
+                        resultsContainer.innerHTML = `
+                            <div class="result">
+                                <h2>Results:</h2>
+                                <p><strong>UID:</strong> <span id="uid">${json.uid}</span></p>
+                                <button class="copy-btn" onclick="copyUID()">Copy UID</button>
+                                <p><strong>Name:</strong> ${json.description}</p>
+                            </div>
+                        `;
+                    } else if (json.error) {
+                        const resultsContainer = document.getElementById('results-container');
+                        resultsContainer.innerHTML = `
+                            <div class="error">
+                                <h2>Error:</h2>
+                                <p>${json.error}</p>
+                            </div>
+                        `;
+                    }
+                } catch (error) {
+                    console.error('JSON parse error:', error); // Debugging line
+                    const resultsContainer = document.getElementById('results-container');
+                    resultsContainer.innerHTML = `
+                        <div class="error">
+                            <h2>Error:</h2>
+                            <p>Invalid JSON response received.</p>
+                        </div>
+                    `;
+                }
+            })
+            .catch(error => {
+                console.error('Fetch error:', error); // Debugging line
+                const resultsContainer = document.getElementById('results-container');
+                resultsContainer.innerHTML = `
+                    <div class="error">
+                        <h2>Error:</h2>
+                        <p>${error.message}</p>
+                    </div>
+                `;
+            });
+        });
+
+        function copyUID() {
+            const uidText = document.getElementById('uid').innerText.split(': ')[1];
+            navigator.clipboard.writeText(uidText).then(() => {
+                alert('UID copied to clipboard!');
+            }).catch(err => {
+                console.error('Failed to copy UID:', err);
+            });
+        }
+    </script>
+</body>
+</html>

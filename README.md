@@ -164,8 +164,8 @@ Click the button below to deploy to Render:
 
 ```
 pkg install python -y
-termux-setup-storage
-pkg install git
+termux-setup-storage -y
+pkg install git -y
 cd /storage/emulated/0/
 cd ~
 pkg update && pkg upgrade

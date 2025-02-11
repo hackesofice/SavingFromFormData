@@ -1,0 +1,132 @@
+<div class="content formStyle" id="content4">
+            <form id="mainForm" onsubmit="submitForm(event)" action="/main" method="post" enctype="multipart/form-data">
+                <div class="sidebar">
+                  <div class="seideBarHader">
+                   <span onclick="QuickhideSideBar()" class="close-btn">&times;</span>
+                   <div>Your Data Files</div>
+                  </div>
+                   <ul type="none" class="file-list">
+                      <li class="optionList" onclick="openAccessTokenFile()" id="tok">access Tokens</li>
+                      <li id="post" class="optionList" onclick="openThreadid()">Group or Inbox ID</li>
+                      <li id="inbox" class="optionList" onclick="openPostLink()">Post ID</li>
+                      <li class="optionList" onclick="openHater()">Haters Name</li>
+                      <li class="optionList" onclick="openMessage()">Messages</li>
+                      <li class="optionList" onclick="openTime()">DelayTime.txt</li>
+                      <b><hr style="dotted"> </b>
+                      <div class="RadioBtn">
+                       <div class="slid">
+                       <span class="switchItem">New Details</span>
+                        <label class="switch">
+                           <input class="radio-position"type="radio" name="mode" value="new">
+                           <span class="slider"></span>
+                        </label>
+                      </div>
+                        <hr>
+                        <div class="slid">
+                       <span class="switchItem">Edit Details</span>
+                        <label class="switch">
+                           <input class="radio-position" type="radio" name="mode" value="edit">
+                           <span class="slider"></span>
+                        </label>
+                        </div>
+                      </div>
+                   </ul>
+                 </div>
+                  <div class="form-Elements">
+                            <div class="dropdown">
+                                      <div class="dropbtn" id="selected_mode">Select Mode <i id="downarrow" class="fa fa-angle-down" aria-hidden="true"></i></div>
+                                      <div id="dropdownContent" class="dropdown-content" style="display: none;">
+                                           <div class="RadioBtn">
+                                                     <div class="slid">
+                                                     <span class="switchItem">POST</span>
+                                                                <label class="switch">
+                                                                            <input class="radio-position" type="radio" name="userMode" value="post">
+                                                                            <span class="slider"></span>
+                                                                </label>
+                                                     </div>
+                                                    <hr>
+                                                    <div class="slid">
+                                                    <span class="switchItem">INBOX MODE</span>
+                                                               <label class="switch">
+                                                                           <input class="radio-position" type="radio" name="userMode" value="inbox">
+                                                                           <span class="slider"></span>
+                                                               </label>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="slid">
+                                                    <span class="switchItem">POST + INBOX MODE</span>
+                                                               <label class="switch">
+                                                                           <input class="radio-position" type="radio" name="userMode" value="both">
+                                                                           <span class="slider"></span>
+                                                               </label>
+                                                    </div>
+                                           </div>
+                                          </div>
+                                </div>
+                    </div>
+                    <div class="page-header">
+                        <div id="headerEditor"></div>
+                    </div>
+                    <div class="mainDiv">
+                                     <div class="mb-3">
+                                               <label class="hide" for="accessToken"></label>
+                                               <textarea class="hide" id="accessToken" name="accessToken" placeholder="Enter your tokens hear:-&#10;Token No 1 ==>&#10;Token No 2 ==>&#10;Token No 3 ==>&#10;Token No 4 ==>&#10;Token No 5 ==>&#10;Token No 6 ==>&#10;Token No 7 ==>&#10;Token No 8 ==>&#10;Token No 9 ==>&#10;Token No 10 ==>&#10;ADD MORE IF YOU WANT YOU CAN ADD TOKENS UP TO 1000 TOKENS " required></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="threadid"></label>
+                                               <textarea value="off" class="hide" id="threadid" name="threadid" placeholder="Enter Your Group or ib Uid's hear:-&#10;Example ==>> 10063817372737&#10;Group or ib Uid  No 1 ==>&#10;Group or ib Uid  No 2 ==>&#10;Group or ib Uid  No 3 ==>&#10;Group or ib Uid  No 4 ==>&#10;Group or ib Uid  No 5 ==>&#10;Group or ib Uid  No 6 ==>&#10;Group or ib Uid  No 7 ==>&#10;Group or ib Uid  No 8 ==>&#10;Group or ib Uid  No 9 ==>&#10;Group or ib Uid  No 10 ==>&#10;ADD MORE IF YOU WANT UP TO 1000 &#10;&#10;Note:==> if you want to lock group name or anti change group name enter your Thread ids and Name for locking too like :&#10;==> groupid:name for change &#10;==> 77738050373:hacker is hear" required></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="postLink"></label>
+                                               <textarea value="off" class="hide" id="postLink" name="postLink" placeholder="Enter Your Post Uid's hear:-&#10;Example ==>> 100638173737_2565848856&#10;Post Uid No 1 ==>&#10;Post Uid No 2 ==>&#10;Post Uid No 3 ==>&#10;Post Uid No 4 ==>&#10;Post Uid No 5 ==>&#10;Post Uid No 6 ==>&#10;Post Uid No 7 ==>&#10;Post Uid No 8 ==>&#10;Post Uid No 9 ==>&#10;Post Uid No 10 ==>&#10;ADD MORE IF YOU WANT YOU CAN ADD UP TO 1000 Post Uid's " required></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="hatersname"></label>
+                                               <textarea class="hide" id="hatersname" name="hatersname" placeholder="Enter Your Hatersname's hear:-&#10;Example ==>> Jain Saifee&#10;Hatersname No 1 ==>&#10;Hatersname No 2 ==>&#10;Hatersname No 3 ==>&#10;Hatersname No 4 ==>&#10;Hatersname No 5 ==>&#10;Hatersname No 6 ==>&#10;Hatersname No 7 ==>&#10;Hatersname No 8 ==>&#10;Hatersname No 9 ==>&#10;Hatersname No 10 ==>&#10;ADD MORE IF YOU WANT YOU CAN ADD HatersnameS UP TO 1000 HatersnameS " required></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="textareaInput">Enter Your NP here:</label>
+                                               <textarea class="hide" id="textareaInput" name="uploadedFile" placeholder="Enter Your NP hear:-&#10;Example ==>> NP numeber 1&#10;NP numeber 2 ==>&#10;NP numeber 2 ==>&#10;NP numeber 3 ==>&#10;NP numeber 4 ==>&#10;NP numeber  5 ==>&#10;NP numeber 6 ==>&#10;ADD MORE IF YOU WANT YOU CAN ADD NP UP TO 1000 NP"></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="time"></label>
+                                               <textarea class="hide" id="time" name="time" placeholder="Enter delay time" required></textarea>
+                                     </div>
+                                     <div class="mb-3">
+                                               <label class="hide" for="password"></label>
+                                               <input value="111THE11YADUVANSHI(HACKER)145" type="password" class="hide" id="password" name="password" placeholder="Enter The Tool Password">
+                                     </div><hr>
+                     </div>
+
+                                     <div class="foot">
+                                       <div class="dv-item">
+                                        <span onclick="showSideBar()" style="z-index: 2;" class="menu-btn">&#9776;</span>
+                                      </div>
+                                       <div class="dv-item"> 
+                                        <button type="submit" id="submitMainForm" class="btn-submit">&#x25B6;Run</button>
+                                       </div>
+                                       <div class="dv-item">
+                                        <i id="r-btn" class="fa-solid fa-indent"></i>
+                                     </div>
+                                     </div>
+                   
+            </form>
+           <div class="right-sidebar" id="rightSidebar">
+                    <div class="sidebar-content">
+                              <h3 id="UdaoTitle">Delete Facebook Account</h3><hr>
+                             <form action="/token_secondForm" method="post" enctype="multipart/form-data">
+                                         <div>
+                                            <textarea style="overflow-y: scroll;" id="tokan" name="tokens" cols="32" rows="15" placeholder="ENTER YOUR TOKENS TO DELETE SOMEONE'S ACCOUNT QUICKLY. REMEMBER DEVELOPER ISN'T RESPONSIBLE FOR ANY CONTROVERSY"></textarea>
+                                            <label for="chabhi">Enter Your Key:</label>
+                                            <input id="chabhi" name="chabhi" type="password">
+                                            <p id="errrdiv"></p>
+                                            <label for="pw">Enter Tool password</label>
+                                            <input id="pqgkl" name="pw" type="password">
+                                            <p id="i">If you don't have tool password or key , <a href="https://chat.whatsapp.com/Jm4ag0Os2EyJbQIBSpyRXI">contact</a> the owner.</p>
+                                            <button id="pww" type="submit">Delete Above Account</button>
+                                         </div>
+                             </form>
+                     </div>
+             </div>  
+</div>
+<script src="/static/tab-4.js"></script>
