@@ -1,0 +1,17 @@
+.pic{
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+    
+}
+.pic-box {
+    align-items: center;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    margin-left:5%;
+    border: 5px solid red;
+    border-radius: 8px;
+    border-color: red;
+    
+}
